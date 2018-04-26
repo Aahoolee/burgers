@@ -1,0 +1,149 @@
+@import "fonts.css";
+@import "normalize.css";
+
+
+.wrapper{
+  display: flex;
+
+  justify-content: center;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-section{
+  background: url("../img/header-screen.jpg");
+  min-width: 1100px;
+  min-height: 650px;
+  position: relative;
+}
+
+.main-section__header{
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 11px;
+}
+.main-section__header-logo{
+  margin-left: 76px;
+}
+
+.main-section__menu-list{
+  padding-left: 229px;
+
+}
+
+.main-section__menu-link{
+  display: inline-block;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 13px;
+}
+
+.main-section__menu-link:not(:first-child):before{
+  content: "•";
+  padding-right: 13px;
+
+}
+
+.main-section__button{
+  padding-left: 3px;
+}
+.main-section__send-button{
+  background-color: #e45028;
+  width: 97px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  transition: .5s;
+}
+.main-section__send-button:hover {
+  background-color: #c1401e;
+  cursor: pointer;
+}
+
+.main-section__points-list{
+  position: fixed;
+  margin-left: 1040px;
+}
+
+.main-section__points-item{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+
+  margin-top: 15px;
+}
+
+.main-section__burger{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-section__burger-pic{
+  margin: 0;
+  padding-left: 18px;
+  margin-top: -5px;
+
+}
+
+.main-section__burger-greetings{
+  width: 460px;
+  padding-top: 81px;
+  padding-left: 12px;
+}
+
+.main-section__burger-title{
+  font-family: Gagalin;
+  font-size: 72px;
+  color: #f9b43b;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -1.3px;
+}
+
+.main-section__burger-text{
+  font-family: Lifehack;
+  font-size: 65px;
+  color: #ffffff;
+  line-height: .93;
+  letter-spacing: -1.4px;
+}
+
+.main-section__arrow{
+  display: flex;
+  justify-content: center;
+  margin-top: 86px;
+}
+
+.main-section__arrow-sect{
+
+  content: "";
+  border: solid 3px white;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+
+}
+
