@@ -21,44 +21,191 @@
 <body>
     <div class="wrapper">
         <div class="main-section">
-            <div class="main-section__header">
-                <img src="img/logo.png" alt="логотип" class="main-section__header-logo">
-                <ul class="main-section__menu-list">
-                    <li class="main-section__menu-link">О нас</li>
-                    <li class="main-section__menu-link">Бургеры</li>
-                    <li class="main-section__menu-link">Команда</li>
-                    <li class="main-section__menu-link">Меню</li>
-                    <li class="main-section__menu-link">Отзывы</li>
-                    <li class="main-section__menu-link">Контакты</li>
-                </ul>
-                <div class="main-section__button">
-                    <button class="main-section__send-button" type="button">Заказать</button>
+            <div class="main-section__container">
+                <div class="main-section__header">
+                    <img src="img/logo.png" alt="логотип" class="main-section__header-logo">
+                    <ul class="main-section__menu-list">
+                        <li class="main-section__menu-link">О нас</li>
+                        <li class="main-section__menu-link">Бургеры</li>
+                        <li class="main-section__menu-link">Команда</li>
+                        <li class="main-section__menu-link">Меню</li>
+                        <li class="main-section__menu-link">Отзывы</li>
+                        <li class="main-section__menu-link">Контакты</li>
+                    </ul>
+                    <div class="main-section__button">
+                        <button class="main-section__send-button" type="button">Заказать</button>
+                    </div>
+                </div>
+                <div class="main-section__points">
+                    <ul class="main-section__points-list">
+                        <li class="main-section__points-item"><div class="main-section__points-item_active"></div></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                        <li class="main-section__points-item"></li>
+                    </ul>
+                </div>
+                <div class="main-section__burger">
+                    <img src="img/header-screen_burger-drops.png" alt="Натуральный бургер" class="main-section__burger-pic">
+                    <div class="main-section__burger-greetings">
+                        <h1 class="main-section__burger-title">Мы делаем</h1>
+                        <span class="main-section__burger-text">натуральные бургеры</span>
+                    </div>
+                </div>
+                <div class="main-section__arrow">
+                    <a href="#" class="main-section__arrow-sect"></a>
                 </div>
             </div>
-            <div class="main-section__points">
-                <ul class="main-section__points-list">
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
-                    <li class="main-section__points-item"></li>
+        </div>
+        <div class="about">
+            <div class="about__container">
+                <div class="about__title">Мы лучшие</div>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <div class="about__item--pic fresh"><img src="img/we-screen_meat.png" /></div>
+                        <h2 class="about__item--title fresh">100% свежее мясо</h2>
+                        <p class="about__item--text fresh">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                    </li>
+                    <li class="about__item">
+                        <div class="about__item--pic handmade"><img src="img/we-screen_hand.png" /></div>
+                        <h2 class="about__item--title handmade">Ручная сборка</h2>
+                        <p class="about__item--text handmade">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                    </li>
+                    <li class="about__item">
+                        <div class="about__item--pic natural"><img src="img/we-screen_natural.png" class=""/></div>
+                        <h2 class="about__item--title natural">Натуральные<br>ингредиенты</h2>
+                        <p class="about__item--text natural">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                    </li>
                 </ul>
             </div>
-            <div class="main-section__burger">
-                <img src="img/header-screen_burger-drops.png" alt="Натуральный бургер" class="main-section__burger-pic">
-                <div class="main-section__burger-greetings">
-                    <h1 class="main-section__burger-title">Мы делаем</h1>
-                    <span class="main-section__burger-text">натуральные бургеры</span>
-                </div>
-            </div>
-            <div class="main-section__arrow">
-                <div class="main-section__arrow-sect"></div>
+        </div>
+        <div class="feeds">
+            <div class="feeds__container">
+                <ul class="feeds__list">
+                    <li class="feeds__item" style="background-image: url('img/feed-man-1.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-2.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-3.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-4.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-5.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-6.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-7.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                    <li class="feeds__item" style="background-image: url('img/feed-man-8.jpg')">
+                        <div class="feeds__item--review">
+                            <div class="feeds__item--name">Константин Спилберг</div>
+                            <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                            <button class="feeds__item--btn">Подробнее</button>
+
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
+        <!--<div class="feeds">-->
+            <!--<div class="feeds__container">-->
+                <!--<ul class="feeds__list">-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-1.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-2.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-3.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-4.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-5.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-6.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-7.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                    <!--<li class="feeds__item">-->
+                        <!--<div class="feeds__item&#45;&#45;pic"><img src="img/feed-man-8.jpg"/></div>-->
+                        <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
+                        <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
+                        <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 
 </body>
