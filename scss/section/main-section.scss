@@ -1,0 +1,161 @@
+.main-section {
+  flex-direction: column;
+  background: url("../img/bg/header-screen.jpg") no-repeat;
+  background-size: cover;
+  //min-width: 1100px;
+  min-height: 100vh;
+  position: relative;
+}
+.main-section__container{
+  min-height: 650px;
+}
+
+.main-section__header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 12px;
+  //min-width: 300px;
+  //max-width: 1060px;
+
+}
+.main-section__header-logo{
+  margin-left: 0px;
+}
+
+.main-section__menu-list{
+  padding-left: 229px;
+
+}
+
+.main-section__menu-link{
+  display: inline-block;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 13px;
+}
+
+.main-section__menu-link:not(:first-child):before{
+  content: "•";
+  padding-right: 13px;
+
+}
+
+.main-section__button{
+  padding-left: 3px;
+}
+.main-section__send-button{
+  background-color: #e45028;
+  //width: 97px;
+  //height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  transition: .5s;
+  padding: 10px;
+}
+.main-section__send-button:hover {
+  background-color: #c1401e;
+  cursor: pointer;
+}
+
+
+
+.main-section__points{
+  position: fixed;
+  top: 97px;
+  right: 45px;
+}
+.main-section__points-list{
+  position: fixed;
+}
+
+.main-section__points-item{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 15px;
+
+
+  &_active{
+    content: " ";
+    background-color: transparent;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid white;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    transform: translate(-32%, -32%);
+  }
+}
+
+.main-section__burger{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 150px;
+
+}
+
+.main-section__burger-pic{
+  margin: 0;
+  padding-left: 18px;
+  margin-top: -5px;
+
+}
+
+.main-section__burger-greetings{
+  width: 460px;
+  padding-top: 81px;
+  padding-left: 12px;
+}
+
+.main-section__burger-title{
+  font-family: Gagalin;
+  font-size: 72px;
+  color: #f9b43b;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -1.3px;
+}
+
+.main-section__burger-text{
+  font-family: Lifehack;
+  font-size: 65px;
+  color: #ffffff;
+  line-height: .93;
+  letter-spacing: -1.4px;
+}
+
+.main-section__arrow{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  //margin-top: 86px;
+}
+
+.main-section__arrow-sect{
+
+  content: "";
+  border: solid 3px white;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+}
