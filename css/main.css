@@ -108,16 +108,22 @@ ul, li {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+h3 {
+  font-family: Gagalin, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f9b43b; }
+
 @font-face {
   font-family: 'Gagalin';
-  src: url("Gagalin-Regular.woff2") format("woff2"), url("Gagalin-Regular.woff") format("woff");
+  src: url("gagalin-regular-webfont.woff2") format("woff2"), url("gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("lifehack_medium-webfont.woff2") format("woff2"), url("lifehack_medium-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -227,7 +233,7 @@ ul, li {
   margin-top: 15px; }
 
 .main-section__burger-title {
-  font-family: Gagalin;
+  font-family: Gagalin, Helvetica, sans-serif;
   font-size: 72px;
   color: #f9b43b;
   text-transform: uppercase;
@@ -362,6 +368,44 @@ ul, li {
   color: #2f3234;
   opacity: .8; }
 
+.team {
+  background: url("../../img/bg/team_bg.jpg");
+  background-size: cover;
+  min-height: 100vh; }
+  .team__container {
+    height: 100vh;
+    width: 50%;
+    background-color: #2f3234;
+    opacity: .93;
+    position: absolute;
+    left: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .team__title {
+    font-family: Gagalin, Helvetica, sans-serif;
+    font-size: 72px;
+    color: #f9b43b; }
+  .team__accordeon {
+    font-size: 14px;
+    font-weight: 700;
+    color: white; }
+    .team__accordeon--text {
+      font-weight: 400; }
+
 .feeds {
   min-height: 100vh; }
 
@@ -424,9 +468,7 @@ ul, li {
     .feeds__item--content:hover {
       opacity: 1; }
   .feeds__item--name {
-    font-family: Gagalin;
-    font-size: 14px;
-    text-transform: uppercase; }
+    color: white; }
   .feeds__item--text {
     font-family: Ubuntu;
     font-weight: 300;

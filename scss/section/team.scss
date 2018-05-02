@@ -1,0 +1,40 @@
+.team{
+  background: url("../../img/bg/team_bg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+
+  &__container{
+    height: 100vh;
+    width: 50%;
+    background-color: $grey;
+    opacity: .93;
+    position: absolute;
+    left: 50%;
+    box-sizing: border-box;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    font-family: Gagalin, Helvetica, sans-serif;
+    font-size: 72px;
+    color: $yell;
+  }
+
+  &__accordeon{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    &--text{
+      font-weight: 400;
+    }
+
+
+  }
+}
+
