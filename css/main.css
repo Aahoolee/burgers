@@ -77,7 +77,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -418,12 +418,12 @@ h3 {
     .team__accordeon--item {
       padding-top: 8px; }
     .team__accordeon--name:before {
-      content: url("../../img/icons/polygon-down.svg");
+      content: url("../img/icons/polygon-down.svg");
       padding-right: 10px; }
     .team__accordeon .name-active {
       color: #f9b43b; }
     .team__accordeon .name-active:before {
-      content: url("../../img/icons/polygon-up.svg");
+      content: url("../img/icons/polygon-up.svg");
       padding-right: 10px; }
     .team__accordeon--container {
       display: -webkit-box;
