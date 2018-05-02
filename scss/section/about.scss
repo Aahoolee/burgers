@@ -6,7 +6,6 @@
   min-height: 100vh;
   position: relative;
   justify-content: center;
-
 }
 
 .about__container{
@@ -15,13 +14,9 @@
   justify-content: center;
   max-width: 1060px;
   min-height: 650px;
-  //top: 50px;
-  //right: 0;
-  //bottom: 0;
-  //left: 0;
   margin: auto;
-  transform: translateY(8%);
-  padding-top: 100px;
+  transform: translateY(10%);
+  //padding-top: 20px;
 }
 
 .about__title{
@@ -36,17 +31,19 @@
 
 .about__list{
   display:flex;
-
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin-top: -10px;
+  align-content: flex-start;
 }
 
 .about__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
   width:30%;
   text-align: center;
-
 }
 
 .about__item--pic{
@@ -59,7 +56,7 @@
   font-weight: 400;
   letter-spacing: -.75px;
   color: $grey;
-
+  padding: 0 10px;
 }
 
 .about__item--text{
@@ -68,5 +65,4 @@
   line-height: 24px;
   color: $grey;
   opacity: .8;
-
 }

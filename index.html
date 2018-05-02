@@ -22,22 +22,29 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="main-section">
+        <section class="main-section">
             <div class="main-section__container">
-                <div class="main-section__header">
-                    <img src="img/logo.png" alt="логотип" class="main-section__header-logo">
-                    <ul class="main-section__menu-list">
-                        <li class="main-section__menu-link">О нас</li>
-                        <li class="main-section__menu-link">Бургеры</li>
-                        <li class="main-section__menu-link">Команда</li>
-                        <li class="main-section__menu-link">Меню</li>
-                        <li class="main-section__menu-link">Отзывы</li>
-                        <li class="main-section__menu-link">Контакты</li>
-                    </ul>
-                    <div class="main-section__button">
-                        <button class="main-section__send-button" type="button">Заказать</button>
+                <header class="main-section__header">
+                    <div class="main-section__header-logo">
+                        <img src="img/logo.png" alt="логотип" class="main-section__header-logo">
                     </div>
-                </div>
+                    <div class="main-section__header-menu">
+                        <nav class="main-section__nav">
+                            <ul class="main-section__menu-list">
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">О нас</a></li>
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">Бургеры</a></li>
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">Команда</a></li>
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">Меню</a></li>
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">Отзывы</a></li>
+                                <li class="main-section__menu-link"><a href="#" class="main-section__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main-section__button">
+                        <button class="order-btn" type="button"><a href="#" class="order-btn-link">Заказать</a></button>
+                    </div>
+                </header>
+
                 <div class="main-section__burger">
                     <img src="img/content/header-screen_burger-drops.png" alt="Натуральный бургер" class="main-section__burger-pic">
                     <div class="main-section__burger-greetings">
@@ -49,8 +56,8 @@
                     <a href="#" class="main-section__arrow-sect"></a>
                 </div>
             </div>
-        </div>
-        <div class="about">
+        </section>
+        <section class="about">
             <div class="about__container">
                 <div class="about__title">Мы лучшие</div>
                 <ul class="about__list">
@@ -71,78 +78,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <!--<div class="feeds">-->
-            <!--<div class="feeds__container">-->
-                <!--<ul class="feeds__list">-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-1.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-2.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-3.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-4.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-5.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-6.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-7.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li class="feeds__item" style="background-image: url('img/content/feed-man-8.jpg')">-->
-                        <!--<div class="feeds__item&#45;&#45;review">-->
-                            <!--<div class="feeds__item&#45;&#45;name">Константин Спилберг</div>-->
-                            <!--<p class="feeds__item&#45;&#45;text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>-->
-                            <!--<button class="feeds__item&#45;&#45;btn">Подробнее</button>-->
-
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <div class="feeds">
+        </section>
+        <section class="feeds">
             <div class="feeds__container">
                 <ul class="feeds__list">
                     <li class="feeds__item">
@@ -211,18 +148,19 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
+
     </div>
-    <div class="main-section__points">
-        <ul class="main-section__points-list">
-            <li class="main-section__points-item"><div class="main-section__points-item_active"></div></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
-            <li class="main-section__points-item"></li>
+    <div class="scroll">
+        <ul class="scroll-list">
+            <li class="scroll-item"><div class="scroll-item_active"></div></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
+            <li class="scroll-item"></li>
         </ul>
     </div>
 
