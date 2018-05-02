@@ -57,12 +57,9 @@
     }
   }
 
-  &--name{
-    color: white;
-  }
 
   &--text{
-    font-family: Ubuntu;
+    font-family: Ubuntu, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
@@ -71,7 +68,7 @@
   }
 
   &--btn{
-    font-family: Ubuntu;
+    font-family: Ubuntu, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase;
