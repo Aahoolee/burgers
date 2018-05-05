@@ -1,23 +1,30 @@
 .wrapper{
-  width: 100%;
-  height: 100%;
+  position: relative;
+  //width: 100%; //понадобится при реализации адаптива
+  min-width: 940px + 20px;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .section{
-  min-height: 100vh;
-  background-size: cover;
-}
-
-.container{
-  width: 1060px;
+  height: 100vh;
   min-height: 650px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 70px;
+
+  //background-size: cover;
+  position: relative;
 }
+//
+//.container{
+//  max-width: 1060px;
+//  min-height: 650px;
+//  margin: 0 auto;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  flex-direction: column;
+
+//
+//}
 
 .scroll{
   position: fixed;
@@ -64,12 +71,12 @@
   text-transform: uppercase;
   transition: .5s;
   padding: 10px;
+  color: white;
+  text-decoration: none;
+
   &:hover{
     background-color: #c1401e;
     cursor: pointer;
   }
-  &-link{
-    color: white;
-    text-decoration: none;
-  }
+
 }

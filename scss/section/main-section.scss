@@ -65,9 +65,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: auto;
 }
 
 .main-section__burger-pic{
+  max-width: 100%;
   margin-left: 10px;
 }
 
@@ -96,21 +98,26 @@
 }
 
 .main-section__arrow{
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  //margin-top: 86px;
+  left: 50%;
+  top: 90%;
 }
 
-.main-section__arrow-sect{
-  content: "";
-  border: solid 3px white;
-  top: 0;
-  width: 20px;
+//.main-section__arrow-sect{
+//  content: "";
+//  border: solid 3px white;
+//  top: 0;
+//  width: 20px;
+//  height: 20px;
+//  transform: rotate(45deg);
+//  border-top: none;
+//  border-left: none;
+//  border-radius: 5px;
+//}
+
+.main-section__arrow-pic{
+  width: 30px;
   height: 20px;
-  transform: rotate(45deg);
-  border-top: none;
-  border-left: none;
-  border-radius: 5px;
+  color: white;
 }
-

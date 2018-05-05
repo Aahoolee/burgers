@@ -5,7 +5,7 @@
   position: relative;
 
   &__container{
-    min-height: 100vh;
+    min-height: 100%;
     width: 49%;
     background-color: $grey;
     opacity: .93;
@@ -27,10 +27,9 @@
   }
 
   &__title{
-    font-family: Gagalin, Helvetica, sans-serif;
-    font-size: rem(72px);
+    //font-family: Gagalin, Helvetica, sans-serif;
+    //font-size: rem(72px);
     color: $yell;
-    margin-bottom: 3px;
   }
 
   &__accordeon{
@@ -43,18 +42,31 @@
       padding-top: 8px;
     }
 
+    &--name{
+      padding-left: 10px;
+    }
+
     &--name:before{
-      content: url("../img/icons/polygon-down.svg");
-      padding-right: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      content: "";
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-top-color: $yell;
+      border-bottom-width: 0;
     }
 
-    .name-active{
-      color: $yell;
-    }
-
-    .name-active:before{
-      content: url("../img/icons/polygon-up.svg");
-      padding-right: 10px;
+    .team__accordeon--item-active{
+      .team__accordeon--name{
+        color: $yell;
+        &:before{
+          transform: rotate(180deg);
+        }
+      }
+      .team__accordeon--container{
+        height: auto;
+      }
     }
 
     &--container{
@@ -65,15 +77,13 @@
       overflow: hidden;
     }
 
-    &--container-active{
-      height: 100%;
-    }
 
     &--image{
     //width: 35%;
     }
 
     &--content{
+
       padding-left: 19px;
     }
 

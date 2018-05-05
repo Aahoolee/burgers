@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.main-section {
+  background: url("../img/bg/header-screen.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative; }
+
+.main-section__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 650px;
+  min-width: 300px;
+  max-width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.main-section__header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding-top: 12px; }
+
+.main-section__header-logo {
+  margin-right: auto; }
+
+.main-section__menu-link {
+  display: inline-block;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-right: 13px; }
+
+.main-section__menu-link:not(:first-child):before {
+  content: "•";
+  padding-right: 13px; }
+
+.main-section__link {
+  color: #fff;
+  text-decoration: none; }
+
+.main-section__button {
+  padding-left: 3px; }
+
+.main-section__burger {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-section__burger-pic {
+  margin-left: 10px; }
+
+.main-section__burger-greetings {
+  width: rem(460px);
+  margin-left: 10px;
+  margin-top: 15px; }
+
+.main-section__burger-title {
+  font-family: Gagalin, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 72px;
+  color: #f9b43b;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -1.3px; }
+
+.main-section__burger-text {
+  font-family: Lifehack;
+  font-size: 65px;
+  color: #ffffff;
+  line-height: .93;
+  letter-spacing: -1.4px; }
+
+.main-section__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.main-section__arrow-sect {
+  content: "";
+  border: solid 3px white;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: none;
+  border-left: none;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=main-section.css.map */
