@@ -7,24 +7,21 @@
 }
 
 .section{
-  height: 100vh;
-  min-height: 650px;
-
-  //background-size: cover;
+  min-height: 100vh;
   position: relative;
 }
-//
-//.container{
-//  max-width: 1060px;
-//  min-height: 650px;
-//  margin: 0 auto;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  flex-direction: column;
 
-//
-//}
+.container{
+  max-width: 940px;
+  min-height: 650px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
 
 .scroll{
   position: fixed;
@@ -69,6 +66,7 @@
   font-weight: 500;
   font-size: 13px;
   text-transform: uppercase;
+  text-align: center;
   transition: .5s;
   padding: 10px;
   color: white;
