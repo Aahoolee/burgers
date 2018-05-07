@@ -1,21 +1,22 @@
 .menu{
-  min-height: 100vh;
-  background: url("../../img/bg/menu_bg.jpg") no-repeat;
-  background-size: cover;
+  height: 100vh;
+  background: url("../img/bg/menu_bg.jpg") center center / cover no-repeat;
   position: relative;
   overflow: hidden;
+  color: white;
 
   &-container{
     //display: flex;
-    //min-height: 650px;
+    min-height: 650px;
     //flex-direction: column;
-    //align-items: flex-end;
+    //align-items: flex-start;
+    //justify-content: flex-start;
   }
 
   &-title{
     color: white;
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 8%;
+    padding-left: 8.5%;
 
   }
 
@@ -24,50 +25,76 @@
     display: flex;
     justify-content: flex-end;
     width: 70%;
+    height: 100%;
     top: 0;
     right: 0;
 
+  }
 
+  &-list{
+    display: flex;
   }
 
   &-item{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+
+    &__content{
+      //height: 100%;
+      background: rgba($grey, 0.93);
+      width:0;
+      overflow: hidden;
+
+    }
 
   }
 
   &-item__title{
     position: relative;
-    height: 100vh;
     max-width: rem(80px);
-
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //white-space: nowrap;
+    white-space: nowrap;
     transform: rotate(270deg);
+    padding-left: 28%;
+
 
     &--meat{
-      background: url("../../img/content/menu-meat-bg.jpg") no-repeat;
-      background-size: cover;
-      white-space: nowrap;
-      padding-left: 60%;
-      transform: rotate(270deg);
+      background: url("../img/content/menu-meat-bg.jpg") center center / cover no-repeat;
+      max-width: 80px;
+      //height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
     }
 
     &--veg{
-      background: url("../../img/content/menu-veg-bg.jpg");
-      white-space: nowrap;
-      padding-left: 60%;
+      background: url("../img/content/menu-veg-bg.jpg") center center / cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
     }
 
     &--diet{
-      background: url("../../img/content/menu-diet-bg.jpg");
-      white-space: nowrap;
-      padding-left: 60%;
+      background: url("../img/content/menu-diet-bg.jpg") center center / cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
     }
   }
 }
 
+.menu-item__text{
+  padding: 7% 7%;
+  font-weight: 300;
+  line-height: 1.7;
+}
 
 
+.active{
+  .menu-item__title{
+    color: $yell;
+  }
+  .menu-item__content{
+    width: auto;
+  }
+}
 

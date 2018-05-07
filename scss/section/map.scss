@@ -1,3 +1,73 @@
 .map{
-  background: url("../../img/bg/map_bg.jpg") center center / cover no-repeat;
+  background: url("../img/bg/map_bg.jpg") center center / cover no-repeat;
+}
+
+.footer{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: url("../img/bg/footer_bg.jpg");
+  height: 60px;
+  margin-top: -60px;
+
+}
+
+.footer__container{
+  max-width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+.contacts{
+  width: 50%;
+}
+
+.social{
+  width: 50%;
+  text-align: right;
+}
+
+.contacts__address{
+  color: white;
+  font-weight: 300;
+
+}
+
+.contacts__tel{
+  font-size: 14px;
+  font-weight: 700;
+  color: $orange;
+  padding-top: 5px;
+
+}
+
+.svg-phone {
+  display: inline-block;
+  margin-right: 10px;
+  fill: $orange;
+  width: 12px;
+  height: 12px;
+
+}
+.social-link{
+  margin-left: 16px;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+
+  fill: $light_grey;
+  width: 20px;
+  height: 20px;
+  &:hover {
+    fill: white;
+  }
+  //&:first-child {
+  //  margin-left: 0;
+  //}
 }

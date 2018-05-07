@@ -13,8 +13,10 @@
     transform: translateX(104%);
     //left: 50%;
     box-sizing: border-box;
-    padding-top: 90px;
     margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+
   }
 
   &__content{
@@ -22,14 +24,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 80px;
-    padding: 0 20px;
+    margin-left: 17%;
+    //padding: 0 20px;
   }
 
   &__title{
     //font-family: Gagalin, Helvetica, sans-serif;
     //font-size: rem(72px);
+    align-items: flex-start;
+    justify-content: flex-start;
     color: $yell;
+    margin-left: 17%;
+    margin-top: 16%;
   }
 
   &__accordeon{
@@ -39,11 +45,11 @@
     max-width: 380px;
 
     &--item{
-      padding-top: 8px;
+      padding-top: 0px;
     }
 
     &--name{
-      padding-left: 10px;
+      padding-left: 0;
     }
 
     &--name:before{
@@ -75,6 +81,8 @@
       margin-left: 20px;
       height:0;
       overflow: hidden;
+      margin-top: -18px;
+      margin-bottom: 20px;
     }
 
 

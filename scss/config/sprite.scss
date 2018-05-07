@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: #00bfa5;
+  width: 25px;
+  height: 25px;
+  &:hover {
+    fill: crimson;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}

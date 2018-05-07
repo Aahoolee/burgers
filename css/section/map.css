@@ -1,2 +1,6 @@
 .map {
   background: url("../../img/bg/map_bg.jpg") center center/cover no-repeat; }
+
+.footer {
+  position: absolute;
+  width: 100%; }

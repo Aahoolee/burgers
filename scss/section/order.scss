@@ -2,28 +2,52 @@
   background: url("../img/bg/order_bg.jpg") center center / cover no-repeat;
   color: white;
 
+  &__container{
+    align-items: center;
+  }
+
   &__title{
     color: $yell;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 .form{
   display: flex;
+  min-height: 100%;
 
   &__nameblock{
     width: 50%;
     margin-right: 20px;
+    align-items: flex-start;
   }
   &__commentblock{
     width: 50%;
+    align-items: flex-start;
   }
 }
 
 .form__row{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   &:last-child{
     margin: 0;
+  }
+  &_comment{
+    margin-bottom: 10px;
+  }
+  &_pay{
+    margin-bottom: 20px;
+  }
+  &_call{
+    //margin-top: 10px;
+    //margin-bottom: 20px;
+  }
+  &_btn{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
   }
 }
 
@@ -44,6 +68,7 @@
 
   &_comment{
     resize: none;
+    line-height: 1.1;
   }
 }
 
@@ -78,6 +103,42 @@
   border: 2px solid $orange;
 }
 
+.form__checkbox{
+  display: none;
+}
+
+.form__block_checkbox{
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  vertical-align: middle;
+  color: $orange;
+  position: relative;
+  display: inline-block;
+}
+
+.form__checkbox:checked + .form__block_checkbox:before{
+  content: "✔";
+  color: $orange;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  right: 0;
+  bottom: 0;
+  //border-radius: 50%;
+}
+
+.form__title{
+  vertical-align: middle;
+  margin-bottom: 7px;
+  margin-left: 5px;
+
+}
+
+.form__checkbox:checked{
+  //border: 2px solid $orange;
+}
 
 .order-btn{
   //display: flex;
@@ -86,3 +147,20 @@
 
 }
 
+.reset-btn{
+  background-color: transparent;
+  min-width: 97px;
+  //height: 35px;
+  //border-radius: 5px;
+  border: none;
+  font-weight: 300;
+  text-align: center;
+  //transition: .5s;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+
+  &:checked{
+    border: transparent;
+  }
+}

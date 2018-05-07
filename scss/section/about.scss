@@ -12,6 +12,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: stretch;
   max-width: 1060px;
   min-height: 650px;
   margin: auto;
@@ -27,6 +28,7 @@
   font-size: 72px;
   color: $grey;
   line-height: 0;
+  margin-bottom: 0;
 }
 
 .about__list{
@@ -57,6 +59,7 @@
   letter-spacing: -.75px;
   color: $grey;
   padding: 0 10px;
+
 }
 
 .about__item--text{
