@@ -754,17 +754,18 @@ footer {
       flex-basis: 50%;
       height: 25%; } }
   .feeds__item--pic {
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: 50% 50%;
-    object-position: 50% 50%; }
+    height: 100%; }
   .feeds__item--ava {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -o-object-fit: cover;
+    object-fit: cover;
     min-width: 100%;
-    min-height: 100%; }
+    min-height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .feeds__item--content {
     position: absolute;
     top: 0;
