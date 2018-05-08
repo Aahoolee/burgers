@@ -7,28 +7,44 @@
   top: 100%;
   width: 100%;
   background: url("../img/bg/footer_bg.jpg");
-  height: 60px;
-  margin-top: -60px;
+  height: rem(60px);
+  margin-top: rem(-60px);
+  @include phones{
+    height: rem(115px);
+    margin-top: rem(-115px);
+  }
 
 }
 
 .footer__container{
-  max-width: 940px;
+  max-width: rem(940px);
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   align-content: center;
-
+  @include phones{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .contacts{
   width: 50%;
+  @include phones{
+    width: 100%;
+  }
 }
 
 .social{
   width: 50%;
   text-align: right;
+  @include phones{
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .contacts__address{
@@ -38,23 +54,31 @@
 }
 
 .contacts__tel{
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
   color: $orange;
-  padding-top: 5px;
+  padding-top: rem(5px);
 
 }
 
-.svg-phone {
+.svg-phone{
   display: inline-block;
-  margin-right: 10px;
+  margin-right: rem(10px);
   fill: $orange;
-  width: 12px;
-  height: 12px;
-
+  width: rem(12px);
+  height: rem(12px);
 }
+
+.svg-phonelink{
+  text-decoration: none;
+  color: $orange;
+}
+
 .social-link{
-  margin-left: 16px;
+  margin-left: rem(16px);
+  @include phones{
+    margin: 0 rem(8px);
+  }
 }
 
 .icon {
@@ -62,8 +86,8 @@
   vertical-align: middle;
 
   fill: $light_grey;
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   &:hover {
     fill: white;
   }

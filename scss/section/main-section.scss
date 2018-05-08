@@ -9,9 +9,9 @@
 .main-section__container{
   display: flex;
   flex-direction: column;
-  min-height: 650px;
-  min-width: 300px;
-  max-width: 940px;
+  min-height: rem(650px);
+  min-width: rem(300px);
+  max-width: rem(940px);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -22,11 +22,18 @@
   justify-content: space-between;
   align-items: center;
   align-content: stretch;
-  padding-top: 12px;
+  padding-top: rem(12px);
 }
 
 .main-section__header-logo{
   margin-right: auto;
+}
+
+.main-section__header-menu{
+  @include tablets{
+    display: none;
+  }
+
 }
 
 .main-section__menu-list{
@@ -37,11 +44,11 @@
   display: inline-block;
   font-family: Ubuntu, Arial, sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
   color: white;
   text-transform: uppercase;
   white-space: nowrap;
-  padding-right: 13px;
+  padding-right: rem(13px);
 }
 
 .main-section__menu-link:not(:first-child):before{
@@ -49,7 +56,7 @@
   //@include circle(6px, #fff);
   //margin: 0 12px;
   content: "•";
-  padding-right: 13px;
+  padding-right: rem(13px);
 }
 
 .main-section__link{
@@ -58,7 +65,29 @@
 }
 
 .main-section__button{
-  padding-left: 3px;
+  padding-left: rem(3px);
+}
+
+.hamburger{
+  display: none;
+  @include tablets{
+    display: block;
+  }
+}
+
+.hamburger__list{
+  position: relative;
+  margin: 20% 0%;
+  align-items: center;
+
+}
+
+.hamburger__item{
+  width: rem(24px);
+  height: rem(4px);
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 5px;
 }
 
 .main-section__burger{
@@ -66,32 +95,37 @@
   align-items: flex-start;
   justify-content: center;
   flex: auto;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .main-section__burger-pic{
   max-width: 100%;
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .main-section__burger-greetings{
   width: rem(460px);
-  margin-left: 10px;
+  margin-left: rem(10px);
   margin-top: 13%;
 }
 
 .main-section__burger-title{
   font-family: Gagalin, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 72px;
+  font-size: rem(72px);
   color: #f9b43b;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
   letter-spacing: -1.3px;
 }
 
 .main-section__burger-text{
   font-family: Lifehack;
-  font-size: 65px;
+  font-size: rem(65px);
   color: #ffffff;
   line-height: .93;
   letter-spacing: -1.4px;
@@ -117,7 +151,7 @@
 //}
 
 .main-section__arrow-pic{
-  width: 30px;
-  height: 20px;
+  width: rem(30px);
+  height: rem(20px);
   color: white;
 }

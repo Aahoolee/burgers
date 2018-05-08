@@ -1,7 +1,7 @@
 .wrapper{
   position: relative;
-  //width: 100%; //понадобится при реализации адаптива
-  min-width: 940px + 20px;
+  width: 100%; //понадобится при реализации адаптива
+  //min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -12,21 +12,20 @@
 }
 
 .container{
-  max-width: 940px;
-  min-height: 650px;
+  max-width: rem(940px);
+  width: 95%;
+  min-height: rem(650px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
-
-
 }
 
 .scroll{
   position: fixed;
-  top: 97px;
-  right: 60px;
+  top: rem(97px);
+  right: rem(60px);
 
   &-list{
     position: fixed;
@@ -44,8 +43,8 @@
     &_active{
       content: " ";
       background-color: transparent;
-      width: 14px;
-      height: 14px;
+      width: rem(14px);
+      height: rem(14px);
       border-radius: 50%;
       border: 1px solid white;
       vertical-align: middle;
@@ -54,27 +53,34 @@
       transform: translate(-32%, -32%);
     }
   }
+
+  @include tablets{
+    display: none;
+  }
 }
 
 .order-btn{
   background-color: #e45028;
-  min-width: 97px;
+  min-width: rem(97px);
   //height: 35px;
   border-radius: 5px;
   border: none;
   font-family: Ubuntu, Arial, sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
   text-align: center;
   transition: .5s;
-  padding: 10px;
+  padding: rem(10px);
   color: white;
   text-decoration: none;
 
   &:hover{
     background-color: #c1401e;
     cursor: pointer;
+  }
+  @include tablets{
+    margin-right: 20%;
   }
 
 }

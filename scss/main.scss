@@ -1,7 +1,14 @@
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
+
 //config
 @import "config/variables.scss";
 @import "config/mixin.scss";
 @import "config/sprite.scss";
+@import "config/media.scss";
 
 //layout
 @import "../scss/layout/adjustments.scss";
@@ -18,6 +25,7 @@
 @import "section/order.scss";
 @import "section/map.scss";
 @import "../css/normalize.css";
+
 
 
 

@@ -13,8 +13,8 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
-  max-width: 1060px;
-  min-height: 650px;
+  max-width: rem(1060px);
+  min-height: rem(650px);
   margin: auto;
   transform: translateY(10%);
   //padding-top: 20px;
@@ -24,11 +24,15 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  font-family: Gagalin, Helvetica, sans-serif;
-  font-size: 72px;
+  //font-family: Gagalin, Helvetica, sans-serif;
+  //font-size: rem(72px);
   color: $grey;
   line-height: 0;
   margin-bottom: 0;
+  @include phones{
+    padding-bottom: 17%;
+
+  }
 }
 
 .about__list{
@@ -37,6 +41,10 @@
   justify-content: center;
   //align-items: flex-start;
   //align-content: flex-start;
+
+  @include phones{
+    flex-direction: column;
+  }
 }
 
 .about__item{
@@ -46,27 +54,62 @@
   align-content: flex-start;
   width:30%;
   text-align: center;
-}
+  @include phones{
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 5%;
+  }
 
-.about__item--pic{
-  margin-bottom: 10px;
+}
+.about__item--content{
+  @include phones{
+    text-align: left;
+  }
+}
+//.about__item--pic{
+//  margin-bottom: rem(10px);
+//  @include phones{
+//    width: 15%;
+//    margin-right: 15%;
+//  }
+//}
+
+.about__svg{
+  display: inline-block;
+  margin-right: rem(10px);
+  //fill: $orange;
+  width: rem(97px);
+  height: rem(89px);
+  &.fresh{
+    fill: $orange;
+  }
+  &.hand{
+    fill: $yell;
+  }
+  &.natural{
+    fill: $green;
+  }
 }
 
 .about__item--title{
   font-family: Lifehack;
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 400;
   letter-spacing: -.75px;
   color: $grey;
-  padding: 0 10px;
+  padding: 0 rem(10px);
+  margin-bottom: 0;
+  @include phones{
+    padding: 0;
+  }
 
 }
 
 .about__item--text{
   font-family: Ubuntu, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14px);
+  line-height: 1.7;
   color: $grey;
   opacity: .8;
 }

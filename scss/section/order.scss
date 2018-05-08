@@ -3,13 +3,22 @@
   color: white;
 
   &__container{
+    display: flex;
     align-items: center;
+
+
+    @include tablets{
+      justify-content: center;
+    }
   }
 
   &__title{
     color: $yell;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    @include phones{
+      font-size: rem(50px);
+    }
   }
 }
 .form{
@@ -18,51 +27,92 @@
 
   &__nameblock{
     width: 50%;
-    margin-right: 20px;
+    margin-right: rem(20px);
     align-items: flex-start;
+    @include tablets{
+      margin: 0;
+      margin-bottom: 2%;
+    }
+    @include phones{
+      width: 100%;
+    }
   }
   &__commentblock{
     width: 50%;
     align-items: flex-start;
+    @include phones{
+      width: 100%;
+    }
+  }
+
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  @include phones{
+    width: 100%;
   }
 }
 
 .form__row{
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
   &:last-child{
     margin: 0;
   }
   &_comment{
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
   &_pay{
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    @include phones{
+      text-align: center;
+      margin-top: 5%;
+    }
   }
   &_call{
     //margin-top: 10px;
     //margin-bottom: 20px;
+    @include phones{
+      text-align: center;
+    }
   }
   &_btn{
     display: flex;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    margin-top: rem(25px);
+    margin-bottom: rem(5px);
+    @include phones{
+      justify-content: center;
+    }
+  }
+
+  @include phones{
+
   }
 }
 
 .form__block{
   flex: 1;
-  margin-right: 20px;
-  &:last-child{
+  margin-left: rem(20px);
+  &:first-child{
     margin: 0;
   }
+
+}
+
+.form__block--floor{
+  @include phones{
+      display: none;
+    }
 }
 
 .form__input{
   border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: rem(5px);
+  padding: rem(10px) rem(15px);
   width: 100%;
   //height: 100%;
 
@@ -77,8 +127,8 @@
 }
 
 .form__block_radio{
-  width: 15px;
-  height: 15px;
+  width: rem(15px);
+  height: rem(15px);
   border-radius: 50%;
   background-color: white;
   vertical-align: middle;
@@ -92,10 +142,10 @@
   background-color: $orange;
   display: block;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  top: rem(5px);
+  left: rem(5px);
+  right: rem(5px);
+  bottom: rem(5px);
   border-radius: 50%;
 }
 
@@ -108,8 +158,8 @@
 }
 
 .form__block_checkbox{
-  width: 15px;
-  height: 15px;
+  width: rem(15px);
+  height: rem(15px);
   background-color: white;
   vertical-align: middle;
   color: $orange;
@@ -131,8 +181,8 @@
 
 .form__title{
   vertical-align: middle;
-  margin-bottom: 7px;
-  margin-left: 5px;
+  margin-bottom: rem(7px);
+  margin-left: rem(5px);
 
 }
 
@@ -149,14 +199,14 @@
 
 .reset-btn{
   background-color: transparent;
-  min-width: 97px;
-  //height: 35px;
-  //border-radius: 5px;
+  min-width: rem(97px);
+  //height: rem(35px);
+  //border-radius: rem(5px);
   border: none;
   font-weight: 300;
   text-align: center;
   //transition: .5s;
-  padding: 10px;
+  padding: rem(10px);
   color: white;
   text-decoration: none;
 

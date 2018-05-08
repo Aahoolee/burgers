@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
@@ -43,12 +43,21 @@
                     <div class="main-section__button">
                         <a href="#" class="order-btn">Заказать</a>
                     </div>
+                    <div class="hamburger">
+                        <a href="#" class="hamburger-link">
+                            <ul class="hamburger__list">
+                                <li class="hamburger__item"></li>
+                                <li class="hamburger__item"></li>
+                                <li class="hamburger__item"></li>
+                            </ul>
+                        </a>
+                    </div>
                 </header>
 
                 <div class="main-section__burger">
                     <img src="img/content/header-screen_burger-drops.png" alt="Натуральный бургер" class="main-section__burger-pic">
                     <div class="main-section__burger-greetings">
-                        <h1 class="main-section__burger-title">Мы делаем</h1>
+                        <h1 class="main-section__burger-title section-title">Мы делаем</h1>
                         <span class="main-section__burger-text">натуральные бургеры</span>
                     </div>
                 </div>
@@ -61,22 +70,40 @@
         </section>
         <section class="about section">
             <div class="about__container container">
-                <h1 class="about__title">Мы лучшие</h1>
+                <h2 class="about__title section-title">Мы лучшие</h2>
                 <ul class="about__list">
                     <li class="about__item">
-                        <div class="about__item--pic fresh"><img src="img/we-screen_meat.png" /></div>
-                        <h2 class="about__item--title fresh">100% свежее мясо</h2>
-                        <p class="about__item--text fresh">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                        <div class="about__item--pic fresh">
+                            <svg class="about__svg fresh" width="97" height="89">
+                                <use xlink:href="img/icons/sprite.svg#meat"></use>
+                            </svg>
+                        </div>
+                        <div class="about__item--content">
+                            <h2 class="about__item--title fresh">100% свежее мясо</h2>
+                            <p class="about__item--text fresh">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                        </div>
                     </li>
                     <li class="about__item">
-                        <div class="about__item--pic handmade"><img src="img/we-screen_hand.png" /></div>
-                        <h2 class="about__item--title handmade">Ручная сборка</h2>
-                        <p class="about__item--text handmade">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                        <div class="about__item--pic handmade">
+                            <svg class="about__svg hand" width="97" height="89">
+                                <use xlink:href="img/icons/sprite.svg#hand"></use>
+                            </svg>
+                        </div>
+                        <div class="about__item--content">
+                            <h2 class="about__item--title handmade">Ручная сборка</h2>
+                            <p class="about__item--text handmade">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
+                        </div>
                     </li>
                     <li class="about__item">
-                        <div class="about__item--pic natural"><img src="img/we-screen_natural.png" class=""/></div>
-                        <h2 class="about__item--title natural">Натуральные ингредиенты</h2>
-                        <p class="about__item--text natural">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                        <div class="about__item--pic natural">
+                            <svg class="about__svg natural" width="97" height="89">
+                                <use xlink:href="img/icons/sprite.svg#natural"></use>
+                            </svg>
+                        </div>
+                        <div class="about__item--content">
+                            <h2 class="about__item--title natural">Натуральные ингредиенты</h2>
+                            <p class="about__item--text natural">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -89,7 +116,7 @@
         <section class="team section">
             <div class="team__container container">
                 <div class="team__title">
-                    <h1 class="team__title--head">Команда</h1>
+                    <h2 class="team__title--head section-title">Команда</h2>
                 </div>
 
                 <div class="team__content">
@@ -97,7 +124,7 @@
                     <div class="team__accordeon">
                         <ul class="team__accordeon--list">
                             <li class="team__accordeon--item">
-                                <h3 class="team__accordeon--name">Дэниэл Редклиф</h3>
+                                <h4 class="team__accordeon--name">Дэниэл Редклиф</h4>
                                 <div class="team__accordeon--container">
                                     <div class="team__accordeon--image"><img src="img/content/team-man-1.jpg"
                                                                              class="team__accordeon--img"></div>
@@ -108,7 +135,7 @@
                                 </div>
                             </li>
                             <li class="team__accordeon--item team__accordeon--item-active">
-                                <h3 class="team__accordeon--name">Ричард Джеймс</h3>
+                                <h4 class="team__accordeon--name">Ричард Джеймс</h4>
                                 <div class="team__accordeon--container">
                                     <div class="team__accordeon--image"><img src="img/content/team-man-1.jpg"
                                                                              class="team__accordeon--img"></div>
@@ -119,7 +146,7 @@
                                 </div>
                             </li>
                             <li class="team__accordeon--item">
-                                <h3 class="team__accordeon--name">Джейк Финн</h3>
+                                <h4 class="team__accordeon--name">Джейк Финн</h4>
                                 <div class="team__accordeon--container">
                                     <div class="team__accordeon--image"><img src="img/content/team-man-1.jpg"
                                                                              class="team__accordeon--img"></div>
@@ -130,7 +157,7 @@
                                 </div>
                             </li>
                             <li class="team__accordeon--item">
-                                <h3 class="team__accordeon--name">Николай Иванов</h3>
+                                <h4 class="team__accordeon--name">Николай Иванов</h4>
                                 <div class="team__accordeon--container">
                                     <div class="team__accordeon--image"><img src="img/content/team-man-1.jpg"
                                                                              class="team__accordeon--img"></div>
@@ -146,13 +173,13 @@
             </div>
         </section>
         <section class="menu section">
-            <h1 class="menu-title">Меню</h1>
             <div class="menu-container container">
+                <h2 class="menu-title section-title">Меню</h2>
                 <div class="menu-accordeon">
                     <ul class="menu-list">
-                        <li class="menu-item active">
-                            <div class="menu-item__title--meat">
-                                <h2 class="menu-item__title">Для мясоедов</h2>
+                        <li class="menu-item active active-phones">
+                            <div class="menu-item__title menu-item__title--meat">
+                                <h3 class="menu-item__title menu-item__title--name subsection-title">Для мясоедов</h3>
                             </div>
                             <div class="menu-item__content">
                                 <p class="menu-item__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
@@ -160,8 +187,8 @@
                             </div>
                         </li>
                         <li class="menu-item">
-                            <div class="menu-item__title--veg">
-                                <h2 class="menu-item__title">Вегетарианское</h2>
+                            <div class="menu-item__title menu-item__title--veg">
+                                <h3 class="menu-item__title menu-item__title--name subsection-title">Вегетарианское</h3>
                             </div>
                             <div class="menu-item__content">
                                 <p class="menu-item__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
@@ -169,8 +196,8 @@
                             </div>
                         </li>
                         <li class="menu-item">
-                            <div class="menu-item__title--diet">
-                                <h2 class="menu-item__title">Диетическое</h2>
+                            <div class="menu-item__title menu-item__title--diet">
+                                <h3 class="menu-item__title menu-item__title--name subsection-title">Диетическое</h3>
                             </div>
                             <div class="menu-item__content">
                                 <p class="menu-item__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
@@ -192,7 +219,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-1.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -200,7 +227,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-2.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -208,7 +235,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-3.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -216,7 +243,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-4.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -224,7 +251,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-5.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -232,7 +259,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-6.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -240,7 +267,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-7.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -248,7 +275,7 @@
                     <li class="feeds__item">
                         <div class="feeds__item--pic"><img src="img/content/feed-man-8.jpg" class="feeds__item--ava"/></div>
                         <div class="feeds__item--content">
-                            <h3 class="feeds__item--name">Константин Спилберг</h3>
+                            <h4 class="feeds__item--name">Константин Спилберг</h4>
                             <p class="feeds__item--text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                             <button class="feeds__item--btn">Подробнее</button>
                         </div>
@@ -258,7 +285,7 @@
         </section>
         <section class="order section">
             <div class="order__container container">
-                <h1 class="order__title">Закажите доставку</h1>
+                <h2 class="order__title section-title">Закажите доставку</h2>
                 <form action="">
                     <div class="form">
                         <div class="form__nameblock">
@@ -291,7 +318,7 @@
                                     <div class="form__title">Квартира</div>
                                     <input type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label class="form__block form__block--floor">
                                     <div class="form__title">Этаж</div>
                                     <input type="text" class="form__input">
                                 </label>
@@ -306,12 +333,12 @@
                             </div>
                             <div class="form__row_pay">
                                 <label class="form__block">
-                                    <input type="radio" class="form__radio" value="yes">
+                                    <input type="radio" name="radio" class="form__radio" value="yes">
                                     <span class="form__block_radio"></span>
                                     <span class="form__title">Потребуется сдача</span>
                                 </label>
                                 <label class="form__block">
-                                    <input type="radio" class="form__radio" value="no">
+                                    <input type="radio" name="radio" class="form__radio" value="no">
                                     <span class="form__block_radio"></span>
                                     <span class="form__title">Оплата по карте</span>
                                 </label>
@@ -345,7 +372,7 @@
                         <div class="contacts__tel">
                             <svg class="svg-phone" width="15" height="15">
                                 <use xlink:href="img/icons/sprite.svg#phone"></use>
-                            </svg>+7 (812) 377-13-77</div>
+                            </svg><a href="tel: +78123771377" class="svg-phonelink">+7 (812) 377-13-77</a></div>
                     </div>
                     <div class="social">
                         <a href="vk.com" class="social-link"><svg class="icon" width="20" height="20">

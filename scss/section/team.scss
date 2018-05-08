@@ -16,6 +16,13 @@
     margin: 0;
     justify-content: flex-start;
     align-items: flex-start;
+    @include tablets{
+      width: 100%;
+      transform: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
   }
 
@@ -26,6 +33,10 @@
     align-items: flex-start;
     margin-left: 17%;
     //padding: 0 20px;
+    @include tablets{
+      margin: 0;
+      align-content: center;
+    }
   }
 
   &__title{
@@ -36,6 +47,9 @@
     color: $yell;
     margin-left: 17%;
     margin-top: 16%;
+    @include tablets{
+      margin: 0;
+    }
   }
 
   &__accordeon{
@@ -45,15 +59,18 @@
     max-width: 380px;
 
     &--item{
-      padding-top: 0px;
+      padding-top: 0;
     }
 
     &--name{
       padding-left: 0;
+      @include tablets{
+        font-size: rem(25px);
+      }
     }
 
     &--name:before{
-      margin-right: 10px;
+      margin-right: rem(10px);
       display: inline-block;
       content: "";
       width: 0;
@@ -61,6 +78,10 @@
       border: 5px solid transparent;
       border-top-color: $yell;
       border-bottom-width: 0;
+      @include tablets{
+
+
+      }
     }
 
     .team__accordeon--item-active{
@@ -78,11 +99,14 @@
     &--container{
       display: flex;
       justify-content: center;
-      margin-left: 20px;
+      margin-left: rem(20px);
       height:0;
       overflow: hidden;
-      margin-top: -18px;
-      margin-bottom: 20px;
+      margin-top: rem(-18px);
+      margin-bottom: rem(20px);
+      @include tablets{
+        flex-direction: column;
+      }
     }
 
 
@@ -92,7 +116,11 @@
 
     &--content{
 
-      padding-left: 19px;
+      padding-left: rem(19px);
+
+      @include tablets{
+        padding: 0;
+      }
     }
 
     &--text{
@@ -102,8 +130,8 @@
     }
 
     &--img{
-      width: 100px;
-      height: 100px;
+      width: rem(100px);
+      height: rem(100px);
       border-radius: 50%;
       object-fit: cover;
     }
