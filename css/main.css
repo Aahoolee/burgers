@@ -820,7 +820,7 @@ footer {
     font-size: 0.8125rem;
     text-transform: uppercase;
     background-color: #2f3234;
-    width: 6.875rem;
+    min-width: 6.875rem;
     height: 2.1875rem;
     border-radius: 0.3125rem;
     border: none;
@@ -828,11 +828,14 @@ footer {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
+    .feeds__item--btn:before {
+      content: "Подробнее"; }
+      @media screen and (max-width: 480px) {
+        .feeds__item--btn:before {
+          content: "Читать отзыв";
+          font-size: 0.875rem; } }
   .feeds__item--btn:hover {
     background-color: #1f2122; }
-  @media screen and (max-width: 480px) {
-    .feeds__item {
-      content: "Читать отзыв"; } }
 
 .feeds__item--review {
   opacity: 0;

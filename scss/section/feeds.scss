@@ -114,20 +114,26 @@
     font-size: rem(13px);
     text-transform: uppercase;
     background-color: $grey;
-    width: rem(110px);
+    min-width: rem(110px);
     height: rem(35px);
     border-radius: rem(5px);
     border: none;
     color: white;
     transition: .5s;
+    &:before{
+      content: "Подробнее";
+      @include phones{
+          content: "Читать отзыв";
+          font-size: rem(16px);
+        }
+    }
   }
 
   &--btn:hover{
     background-color: #1f2122;
   }
-  @include phones{
-    content: "Читать отзыв";
-  }
+
+
 }
 
 .feeds__item--review{
