@@ -431,10 +431,25 @@
 
     </div>
     <script>
-        const element = document.createElement('div');
-        const container = document.querySelector('#hamburger');
+//        const element = document.createElement('div');
+//        const container = document.querySelector('.hamburger');
+//
+//        container.appendChild(element);
+        function openMenu() {
+            const btn = document.querySelector('.hamburger-link');
+            const menu = document.querySelector('.hamburger');
 
-        container.appendChild(element);
+            btn.addEventListener('click', function() {
+                menu.addClass('.hamburger-popup');
+                menu.fadeIn();
+
+            })
+
+        }
+
+        openMenu();
+
+
     </script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

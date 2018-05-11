@@ -91,12 +91,22 @@
   }
   .menu-item__content{
     width: auto;
-    @include phones{
-      width: 0;
-    }
+    //@include phones{
+    //  //position: absolute;
+    //  width: 100%;
+    //}
   }
 }
 
 .active-phones{
-
+  @include phones{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+  }
 }

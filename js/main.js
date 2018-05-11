@@ -3,7 +3,7 @@ function openMenu() {
     const menu = document.querySelector('.hamburger');
 
     btn.addEventListener('click', function() {
-        menu.addClass('hamburger-popup');
+        menu.addClass('.hamburger-popup');
         menu.fadeIn();
 
     })
