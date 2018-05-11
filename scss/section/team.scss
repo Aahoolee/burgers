@@ -1,19 +1,13 @@
 .team{
-  background: url("../img/bg/team_bg.jpg");
-  background-size: cover;
-  min-height: 100vh;
-  position: relative;
+  background: url("../img/bg/team_bg.jpg") center center / cover no-repeat;
 
   &__container{
-    min-height: 100%;
+    height: 100%;
     width: 49%;
     background-color: $grey;
     opacity: .93;
     position: absolute;
     transform: translateX(104%);
-    //left: 50%;
-    box-sizing: border-box;
-    margin: 0;
     justify-content: flex-start;
     align-items: flex-start;
     @include tablets{
@@ -23,7 +17,6 @@
       align-items: center;
       text-align: center;
     }
-
   }
 
   &__content{
@@ -32,7 +25,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-left: 17%;
-    //padding: 0 20px;
+
     @include tablets{
       margin: 0;
       align-content: center;
@@ -40,8 +33,6 @@
   }
 
   &__title{
-    //font-family: Gagalin, Helvetica, sans-serif;
-    //font-size: rem(72px);
     align-items: flex-start;
     justify-content: flex-start;
     color: $yell;
@@ -78,9 +69,9 @@
       border: 5px solid transparent;
       border-top-color: $yell;
       border-bottom-width: 0;
+
       @include tablets{
-
-
+        margin-bottom: rem(4px);
       }
     }
 
@@ -109,15 +100,8 @@
       }
     }
 
-
-    &--image{
-    //width: 35%;
-    }
-
     &--content{
-
       padding-left: rem(19px);
-
       @include tablets{
         padding: 0;
       }
@@ -126,7 +110,6 @@
     &--text{
       font-weight: 400;
       line-height: 1.72;
-
     }
 
     &--img{
@@ -135,8 +118,6 @@
       border-radius: 50%;
       object-fit: cover;
     }
-
-
   }
 }
 

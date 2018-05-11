@@ -1,31 +1,18 @@
 .about{
   flex-direction: column;
-  background: url("../img/bg/we-screen_bg.jpg");
-  background-size: cover;
-  //min-width: 1100px;
-  min-height: 100vh;
-  position: relative;
+  background: url("../img/bg/we-screen_bg.jpg") center center / cover no-repeat;
   justify-content: center;
 }
 
 .about__container{
-  display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-  max-width: rem(1060px);
-  min-height: rem(650px);
-  margin: auto;
-  transform: translateY(10%);
-  //padding-top: 20px;
+  padding-top: 10%;
 }
 
 .about__title{
   display:flex;
   justify-content: center;
   align-items: center;
-  //font-family: Gagalin, Helvetica, sans-serif;
-  //font-size: rem(72px);
   color: $grey;
   line-height: 0;
   margin-bottom: 0;
@@ -39,8 +26,6 @@
   display:flex;
   flex-direction: row;
   justify-content: center;
-  //align-items: flex-start;
-  //align-content: flex-start;
 
   @include phones{
     flex-direction: column;
@@ -66,18 +51,10 @@
     text-align: left;
   }
 }
-//.about__item--pic{
-//  margin-bottom: rem(10px);
-//  @include phones{
-//    width: 15%;
-//    margin-right: 15%;
-//  }
-//}
+
 
 .about__svg{
   display: inline-block;
-  margin-right: rem(10px);
-  //fill: $orange;
   width: rem(97px);
   height: rem(89px);
   &.fresh{
@@ -89,10 +66,13 @@
   &.natural{
     fill: $green;
   }
+  @include phones{
+    margin-right: rem(20px);
+  }
 }
 
 .about__item--title{
-  font-family: Lifehack;
+  font-family: Lifehack, cursive;
   font-size: rem(24px);
   font-weight: 400;
   letter-spacing: -.75px;

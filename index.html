@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="about section">
+        <section class="about section section">
             <div class="about__container container">
                 <h2 class="about__title section-title">Мы лучшие</h2>
                 <ul class="about__list">
@@ -213,7 +213,7 @@
 
         </section>
 
-        <section class="feeds section">
+        <section class="feeds">
             <div class="feeds__container">
                 <ul class="feeds__list">
                     <li class="feeds__item">
@@ -375,16 +375,16 @@
                             </svg><a href="tel: +78123771377" class="svg-phonelink">+7 (812) 377-13-77</a></div>
                     </div>
                     <div class="social">
-                        <a href="vk.com" class="social-link"><svg class="icon" width="20" height="20">
+                        <a href="http://vk.com" class="social-link"><svg class="icon" width="20" height="20">
                             <use xlink:href="img/icons/sprite.svg#vk"></use>
                         </svg></a>
-                        <a href="facebook.com" class="social-link"><svg class="icon" width="20" height="20">
+                        <a href="http://facebook.com" class="social-link"><svg class="icon" width="20" height="20">
                             <use xlink:href="img/icons/sprite.svg#fb"></use>
                         </svg></a>
-                        <a href="instagram.com" class="social-link"><svg class="icon" width="20" height="20">
+                        <a href="http://instagram.com" class="social-link"><svg class="icon" width="20" height="20">
                             <use xlink:href="img/icons/sprite.svg#inst"></use>
                         </svg></a>
-                        <a href="twitter.com" class="social-link"><svg class="icon" width="20" height="20">
+                        <a href="http://twitter.com" class="social-link"><svg class="icon" width="20" height="20">
                             <use xlink:href="img/icons/sprite.svg#twitter"></use>
                         </svg></a>
                     </div>
@@ -407,6 +407,36 @@
             <li class="scroll-item"></li>
         </ul>
     </div>
+    <div class="hamburger-popup section">
+        <div class="hamburger-popup__header">
+            <div class="hamburger-popup__logo">
+                <img src="img/icons/logo.svg" alt="логотип" class="hamburger-popup__pic">
+            </div>
+            <button class="hamburger-popup__button">
 
+            </button>
+        </div>
+
+        <div class="hamburger-popup__container container">
+            <ul class="hamburger-popup__list">
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">О нас</a></li>
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">Бургеры</a></li>
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">Команда</a></li>
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">Меню</a></li>
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">Отзывы</a></li>
+                <li class="hamburger-popup__items"><a href="#" class="hamburger-popup__link">Контакты</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <script>
+        const element = document.createElement('div');
+        const container = document.querySelector('#hamburger');
+
+        container.appendChild(element);
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

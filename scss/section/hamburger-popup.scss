@@ -1,0 +1,84 @@
+.hamburger-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $grey;
+  flex-direction: column;
+
+  display: none;
+  opacity: 0;
+
+}
+
+.hamburger-popup__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.hamburger-popup__logo{
+  width: 50%;
+
+}
+
+.hamburger-popup__button{
+  width: rem(20px);
+  height: rem(20px);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5%;
+
+  &:before{
+    position: absolute;
+    content: '';
+    width: rem(20px);
+    height: rem(4px);
+    border-radius: 5px;
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    width: rem(20px);
+    height: rem(4px);
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+
+}
+
+.hamburger-popup__container{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hamburger-popup__list{
+  text-align: center;
+
+}
+.hamburger-popup__items{
+  margin-bottom: 30%;
+  &:not(first-child):before{
+    position: absolute;
+    @include circle(6px, $yell);
+    //content: "•";
+    //padding-right: rem(6px);
+
+  }
+
+}
+.hamburger-popup__link{
+  font-size: rem(24px);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+
+
+}

@@ -1,22 +1,17 @@
 .menu{
-  height: 100vh;
   background: url("../img/bg/menu_bg.jpg") center center / cover no-repeat;
-  position: relative;
   overflow: hidden;
   color: white;
 
   &-container{
-    //display: flex;
-    min-height: rem(650px);
-    //flex-direction: column;
-    //align-items: flex-start;
     justify-content: flex-start;
   }
 
   &-title{
     color: white;
-    padding-top: 9%;
-    padding-left: 1.5%;
+    //padding-top: 9%;
+    //padding-left: 1.5%;
+    align-items: flex-start;
 
   }
 
@@ -31,8 +26,6 @@
     @include tablets{
       width: 100%;
     }
-
-
   }
 
   &-list{
@@ -84,7 +77,6 @@
       justify-content: center;
     }
   }
-
 }
 
 .menu-item__text{
@@ -92,7 +84,6 @@
   font-weight: 300;
   line-height: 1.7;
 }
-
 
 .active{
   .menu-item__title{

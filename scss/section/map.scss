@@ -6,14 +6,13 @@
   position: absolute;
   top: 100%;
   width: 100%;
-  background: url("../img/bg/footer_bg.jpg");
+  background: url("../img/bg/footer_bg.jpg") center center / cover no-repeat;
   height: rem(60px);
   margin-top: rem(-60px);
   @include phones{
     height: rem(115px);
     margin-top: rem(-115px);
   }
-
 }
 
 .footer__container{
@@ -32,14 +31,14 @@
 }
 
 .contacts{
-  width: 50%;
+  width: 60%;
   @include phones{
     width: 100%;
   }
 }
 
 .social{
-  width: 50%;
+  width: 40%;
   text-align: right;
   @include phones{
     width: 100%;
@@ -50,7 +49,6 @@
 .contacts__address{
   color: white;
   font-weight: 300;
-
 }
 
 .contacts__tel{
@@ -58,7 +56,6 @@
   font-weight: 700;
   color: $orange;
   padding-top: rem(5px);
-
 }
 
 .svg-phone{
@@ -77,7 +74,7 @@
 .social-link{
   margin-left: rem(16px);
   @include phones{
-    margin: 0 rem(8px);
+    margin:  rem(8px);
   }
 }
 
@@ -91,7 +88,4 @@
   &:hover {
     fill: white;
   }
-  //&:first-child {
-  //  margin-left: 0;
-  //}
 }

@@ -3,9 +3,7 @@
   color: white;
 
   &__container{
-    display: flex;
     align-items: center;
-
 
     @include tablets{
       justify-content: center;
@@ -21,6 +19,7 @@
     }
   }
 }
+
 .form{
   display: flex;
   min-height: 100%;
@@ -100,7 +99,6 @@
   &:first-child{
     margin: 0;
   }
-
 }
 
 .form__block--floor{
