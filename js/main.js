@@ -49,11 +49,11 @@ function init() {
             iconImageSize: [46, 57]
         });
 
-    var placemark2 = new ymaps.Placemark([59.94, 30.38], {
-            hintContent: '<div class="map__hint">ул. Литераторов, д. 19 </div>',
+    var placemark2 = new ymaps.Placemark([59.9394, 30.3805], {
+            hintContent: '<div class="map__hint">пер. Дегтярный, д. 20 </div>',
             balloonContent: [
-                '<div class="map__balloon">Бургерная на ул. Литераторов, д. 19, ' +
-                'тел. (812) 333-0085 </div>'
+                '<div class="map__balloon">Бургерная на Дегтярном пер., д. 20, ' +
+                'тел. (812) 333-0087 </div>'
             ]
         },
         {
@@ -63,10 +63,10 @@ function init() {
         });
 
     var placemark3 = new ymaps.Placemark([59.941, 30.49], {
-            hintContent: '<div class="map__hint">ул. Литераторов, д. 19 </div>',
+            hintContent: '<div class="map__hint">ул. Наставников, д. 11, к.1 </div>',
             balloonContent: [
-                '<div class="map__balloon">Бургерная на ул. Литераторов, д. 19, ' +
-                'тел. (812) 333-0085 </div>'
+                '<div class="map__balloon">Бургерная на Наставников, д. 11, к. 1, ' +
+                'тел. (812) 333-0088 </div>'
             ]
         },
         {
