@@ -167,6 +167,7 @@
 
 .form__checkbox:checked + .form__block_checkbox:before{
   content: "✔";
+  font-weight: 700;
   color: $orange;
   display: block;
   position: absolute;
