@@ -4,7 +4,7 @@ function openMenu() {
 
 
     openBtn.addEventListener('click', function() {
-        menu.classList.add('.hamburger-popup__display');
+        menu.addClass('.hamburger-popup__display');
         menu.fadeIn();
 
     });
