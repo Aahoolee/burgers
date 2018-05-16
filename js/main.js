@@ -14,7 +14,7 @@ function openMenu() {
 
     closeBtn.addEventListener('click', function () {
         menu.fadeOut();
-        menu.remove('.display-section');
+        menu.removeClass('.display-section');
         // menu.style.display = 'none';
     });
 }

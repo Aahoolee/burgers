@@ -1285,10 +1285,15 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 2% 0% 2% 2%; }
+  padding-top: 2%;
+  padding-right: 3%;
+  padding-left: 2.5%; }
 
 .hamburger-popup__logo {
   width: 50%; }
+
+.hamburger-popup__pic {
+  max-height: 69px; }
 
 .hamburger-popup__button {
   width: 2.5rem;
@@ -1311,8 +1316,8 @@ footer {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: white;
-    top: 2.75rem;
-    right: 1rem; }
+    top: 3.125rem;
+    right: 0.875rem; }
     @media screen and (max-width: 480px) {
       .hamburger-popup__button-link:before {
         right: 0.5rem; } }
@@ -1326,8 +1331,8 @@ footer {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     background-color: white;
-    top: 2.75rem;
-    right: 1rem; }
+    top: 3.125rem;
+    right: 0.875rem; }
     @media screen and (max-width: 480px) {
       .hamburger-popup__button-link:after {
         right: 0.5rem; } }
