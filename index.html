@@ -109,14 +109,24 @@
             </div>
         </section>
         <section class="slider section">
+            <div class="slider__arrow-left">
+                <a href="#" class="slider__arrow-left-sect">
+                    <img src="img/icons/arrow-scroll.svg" alt="стрелка влево" class="slider__arrow-left-pic">
+                </a>
+            </div>
+
             <div class="slider__container container">
                 <div class="slider__container--ingredients">
                     <img src="img/icons/burger.svg" alt="состав" class="slider__container--ingredients-pic">
                     <h4 class="slider__container--ingredients-title">состав</h4>
                 </div>
                 <div class="slider__container--energy">
-                    <img src="img/icons/kkal.svg" alt="энергетическая ценность" class="slider__container--energy-pic">
-                    <h4 class="slider__container--energy-title">ккал</h4>
+                    <div>
+                        <img src="img/icons/kkal.svg" alt="энергетическая ценность" class="slider__container--energy-pic">
+                        <span class="slider__container--energy-text">1200</span>
+                        <h4 class="slider__container--energy-title">ккал</h4>
+                    </div>
+
                 </div>
                 <div class="slider__burger">
                     <img src="img/content/burger_ink.png" class="slider__burger--pic"/>
@@ -131,6 +141,12 @@
                     </div>
                 </div>
             </div>
+            <div class="slider__arrow-right">
+                <a href="#" class="slider__arrow-right-sect">
+                    <img src="img/icons/arrow-scroll.svg" alt="стрелка влево" class="slider__arrow-right-pic">
+                </a>
+            </div>
+
         </section>
         <section class="team section">
             <div class="team__container container">
@@ -426,7 +442,7 @@
             <li class="scroll-item"></li>
         </ul>
     </div>
-    <div class="hamburger-popup section">
+    <div class="hamburger-popup section display-section">
         <div class="hamburger-popup__header">
             <div class="hamburger-popup__logo">
                 <img src="img/icons/logo.svg" alt="логотип" class="hamburger-popup__pic">
@@ -451,26 +467,6 @@
     </div>
 
 
-    <script>
-//        const element = document.createElement('div');
-//        const container = document.querySelector('.hamburger');
-//
-//        container.appendChild(element);
-        function openMenu() {
-            const btn = document.querySelector('.hamburger-link');
-            const menu = document.querySelector('.hamburger');
-
-            btn.addEventListener('click', function() {
-                menu.addClass('.hamburger-popup');
-                menu.fadeIn();
-
-            })
-
-        }
-
-        openMenu();
-
-    </script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

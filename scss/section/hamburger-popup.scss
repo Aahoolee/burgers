@@ -5,9 +5,8 @@
   width: 100%;
   background-color: $grey;
   flex-direction: column;
-
   display: none;
-  opacity: 0.98;
+  //opacity: 0.98;
 
 }
 
@@ -81,4 +80,8 @@
   color: white;
 
 
+}
+
+.display-section{
+  opacity: 0.99;
 }

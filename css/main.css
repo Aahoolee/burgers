@@ -562,11 +562,6 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .slider__container--energy::before {
-    content: "1200";
-    vertical-align: middle;
-    font-family: Gagalin, sans-serif;
-    font-size: 20px; }
   .slider__container--energy-pic {
     color: white;
     width: 3.75rem;
@@ -574,6 +569,13 @@ footer {
   .slider__container--energy-title {
     color: white;
     margin-bottom: 0; }
+
+.slider__container--energy-text {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-family: Gagalin, sans-serif;
+  font-size: 20px; }
 
 .slider__content--price {
   font-family: Gagalin, sans-serif;
@@ -586,6 +588,24 @@ footer {
 
 .slider__content--button {
   margin-left: 25px; }
+
+.slider__arrow-left-pic {
+  width: 1.875rem;
+  height: 1.25rem;
+  color: white;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: 35px; }
+
+.slider__arrow-right-pic {
+  width: 1.875rem;
+  height: 1.25rem;
+  color: white;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-right: 35px; }
 
 .team {
   background: url("../img/bg/team_bg.jpg") center center/cover no-repeat; }
