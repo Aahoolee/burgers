@@ -1,22 +1,22 @@
 function openMenu() {
     const openBtn = document.querySelector('.hamburger-link');
-    const menu = document.querySelector('.hamburger-popup');
-
+    const menu = $('.hamburger-popup');
+    const wrapper = document.querySelector('.wrapper');
 
     openBtn.addEventListener('click', function() {
-
-        menu.classList.add('.display-section');
         menu.fadeIn();
-
+        menu.addClass('.display-section');
+        // menu.style.display = 'block';
+        wrapper.style.overflow = 'hidden';
     });
 
     const closeBtn = document.querySelector('.hamburger-popup__button');
 
     closeBtn.addEventListener('click', function () {
-        menu.fadeOut.remove('.hamburger-popup__display')
-
+        menu.fadeOut();
+        menu.remove('.display-section');
+        // menu.style.display = 'none';
     });
-
 }
 
 openMenu();

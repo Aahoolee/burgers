@@ -3,11 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   background-color: $grey;
   flex-direction: column;
   display: none;
-  //opacity: 0.98;
-
 }
 
 .hamburger-popup__header{
@@ -15,41 +14,54 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 5%;
+  padding: 2% 0% 2% 2%;
 }
 
 .hamburger-popup__logo{
   width: 50%;
-
 }
 
 .hamburger-popup__button{
-  width: rem(20px);
-  height: rem(20px);
+  width: rem(40px);
+  height: rem(40px);
+}
+
+.hamburger-popup__button-link{
+  width: rem(25px);
+  height: rem(25px);
   background: none;
-  border: none;
+  border: rem(13px) solid transparent;
   cursor: pointer;
-  margin-right: 5%;
+  margin-right: 2%;
 
   &:before{
     position: absolute;
     content: '';
-    width: rem(20px);
-    height: rem(4px);
+    width: rem(30px);
+    height: rem(5px);
     border-radius: 5px;
     transform: rotate(45deg);
     background-color: white;
+    top: rem(44px);
+    right: rem(16px);
+    @include phones{
+      right: rem(8px);
+    }
   }
   &:after{
     position: absolute;
     content: '';
-    width: rem(20px);
-    height: rem(4px);
+    width: rem(30px);
+    height: rem(5px);
     border-radius: 5px;
     transform: rotate(-45deg);
     background-color: white;
+    top: rem(44px);
+    right: rem(16px);
+    @include phones{
+      right: rem(8px);
+    }
   }
-
 }
 
 .hamburger-popup__container{
@@ -64,22 +76,22 @@
 }
 .hamburger-popup__items{
   margin-bottom: 30%;
-  &:not(first-child):before{
+  &:not(:last-child):after{
     position: absolute;
-    @include circle(6px, $yell);
-    //content: "•";
-    //padding-right: rem(6px);
-
+    content: "•";
+    font-size: rem(30px);
+    text-align: center;
+    padding-right: rem(6px);
+    left: 49%;
+    margin-top: rem(30px);
+    color: $yell;
   }
-
 }
 .hamburger-popup__link{
   font-size: rem(24px);
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-
-
 }
 
 .display-section{
