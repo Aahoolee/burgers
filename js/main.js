@@ -1,6 +1,9 @@
+///// ПОЛНОЭКРАННОЕ МЕНЮ
+
 function openMenu() {
     const openBtn = document.querySelector('.hamburger-link');
     const menu = $('.hamburger-popup');
+    const closeBtn = document.querySelector('.hamburger-popup__button');
     const wrapper = document.querySelector('.wrapper');
 
     openBtn.addEventListener('click', function() {
@@ -10,19 +13,94 @@ function openMenu() {
         wrapper.style.overflow = 'hidden';
     });
 
-    const closeBtn = document.querySelector('.hamburger-popup__button');
-
     closeBtn.addEventListener('click', function () {
         menu.fadeOut();
         menu.removeClass('.display-section');
         // menu.style.display = 'none';
+        wrapper.style.overflow = 'visible';
     });
 }
 
 openMenu();
 
+///// СЛАЙДЕР-КАРУСЕЛЬ
 
-////// карта
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items:2,
+        lazyLoad:true,
+        loop:true,
+        margin:10
+    });
+});
+
+///// АККОРДЕОН КОМАНДА
+
+// function openPosition() {
+//     // $('.team__accordeon--item').click(function () {
+//     //
+//     // })
+//     const openPos = document.querySelector('.team__accordeon--item');
+//     const active = $('team__accordeon--item-active');
+//
+//     openPos.addEventListener('click', function(){
+//         active.slideDown();
+//         active.addClass('.team__accordeon--item-active');
+//
+//     });
+//     const closePos = document.querySelector('.team__accordeon--item-active');
+//
+//     closePos.addEventListener('click', function () {
+//         active.slideUp();
+//         active.removeClass('.team__accordeon--item-active');
+//     });
+// }
+//
+// openPosition();
+
+$(document).ready(function() {
+    $('.team__accordeon--name').click(function() {
+        var team =$(this).parent('.team__accordeon--item');
+
+        if(!team.hasClass('team__accordeon--item-active')) {
+            $('.team__accordeon--container').slideUp(400);
+            $('.team__accordeon--item').removeClass('team__accordeon--item-active');
+            team.addClass('team__accordeon--item-active');
+            team.children('.team__accordeon--container').slideDown(400);
+        } else {
+            $(this).parent('.team__accordeon--item').removeClass('team__accordeon--item-active');
+        }
+
+        return false;
+    });
+});
+
+///// АККОРДЕОН МЕНЮ
+
+$(document).ready(function() {
+    $('.menu-item__title').click(function() {
+        var menu=$(this).parent('.menu-item');
+
+        if(!menu.hasClass('active')) {
+            $('.menu-item__content').hide();
+            $('.menu-item').removeClass('active');
+            menu.addClass('active');
+            menu.children('.menu-item__content').show();
+        } else {
+            $(this).parent('.menu-item').removeClass('active');
+        }
+
+        return false;
+    });
+});
+
+
+///// МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ
+
+
+
+
+///// КАРТА
 
 ymaps.ready(init);
 

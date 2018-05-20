@@ -13,6 +13,7 @@
     //padding-left: 1.5%;
     align-items: flex-start;
 
+
   }
 
   &-accordeon{
@@ -46,7 +47,9 @@
 
   &-item__title{
 
-    &--name{
+    cursor: pointer;
+
+    &-name{
       position: relative;
       max-width: rem(80px);
       white-space: nowrap;
@@ -86,7 +89,8 @@
 }
 
 .active{
-  .menu-item__title{
+  transition: 0.5s;
+  .menu-item__title-name{
     color: $yell;
   }
   .menu-item__content{

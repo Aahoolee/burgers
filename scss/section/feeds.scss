@@ -151,4 +151,73 @@
   }
 }
 
+///// модальное окно
 
+.feeds-popup{
+  //position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($grey, 0.8);
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.feeds-popup__window{
+  position: relative;
+  width: rem(460px);
+  height: rem(255px);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 3% 5%;
+
+}
+
+.feeds-popup__title{
+  color: $grey;
+}
+
+.feeds-popup__button{
+  width: rem(40px);
+  height: rem(40px);
+}
+
+.feeds-popup__button-link{
+  width: rem(25px);
+  height: rem(25px);
+  background: none;
+  border: rem(15px) solid transparent;
+  cursor: pointer;
+  margin-right: 2%;
+
+  &:before{
+    position: absolute;
+    content: '';
+    width: rem(20px);
+    height: rem(4px);
+    border-radius: 5px;
+    transform: rotate(45deg);
+    background-color: $orange;
+    top: rem(30px);
+    right: rem(20px);
+    @include phones{
+      right: rem(8px);
+    }
+  }
+  &:after{
+    position: absolute;
+    content: '';
+    width: rem(20px);
+    height: rem(4px);
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    background-color: $orange;
+    top: rem(30px);
+    right: rem(20px);
+    @include phones{
+      right: rem(8px);
+    }
+  }
+}

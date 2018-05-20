@@ -14,9 +14,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 2%;
-  padding-right: 3%;
-  padding-left: 2.5%;
+  padding-top: rem(12px);
+  //padding-right: rem(20px);
+  padding-left: rem(11px);
 }
 
 .hamburger-popup__logo{
@@ -24,7 +24,7 @@
 }
 
 .hamburger-popup__pic{
-  max-height: 69px;
+  max-height: rem(85px);
 }
 
 .hamburger-popup__button{
@@ -101,5 +101,5 @@
 }
 
 .display-section{
-  opacity: 0.99;
+  opacity: 0.98;
 }
