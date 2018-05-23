@@ -7,17 +7,49 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  min-width: 100vw;
+  margin: 0;
   @include tablets{
     flex-direction: column;
     margin-top: 4%;
   }
 }
 
+.slider__components{
+
+}
+
+.slider__list{
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  position: absolute;
+  top: 23%;
+  left: 14%;
+  overflow: hidden;
+  height: rem(475px);
+
+}
+
+.slider__item{
+  //display: flex;
+  //flex-flow: row nowrap;
+  display: none;
+  white-space: normal;
+  width: rem(1060px);
+  //height: 100%;
+}
+
+.slider__item--active{
+  display: inline-flex;
+}
+
 .slider__burger{
-  width: 50%;
-  height: 100%;
-  margin: 0;
-  justify-content: flex-start;
+  //width: 50%;
+  //height: 100%;
+  margin-top: 3%;
+  justify-content: center;
+  align-items: center;
   @include tablets{
     width: 90%;
     margin-top: 7%;
@@ -25,7 +57,8 @@
 }
 
 .slider__content{
-  width: 50%;
+  //max-width: 30%;
+  width: rem(460px);
   color: white;
   padding-left: 11px;
   @include tablets{
@@ -40,7 +73,8 @@
 }
 
 .slider__burger--pic{
-  width: 107%;
+  width: rem(460px);
+  //max-height: rem(310px);
   margin-left: -32px;
   @include tablets{
     width: 90%;
@@ -68,8 +102,8 @@
 .slider__container--ingredients{
   content: '';
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 0%;
+  left: 0%;
   background: rgba($orange, .4);
   border-radius: 5px;
   width: rem(90px);
@@ -105,8 +139,8 @@
 .slider__container--energy{
   color: white;
   position: absolute;
-  top: 73%;
-  left: 7%;
+  top: 83%;
+  left: 0%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -182,7 +216,7 @@
   height: rem(20px);
   color: white;
   transform: rotate(90deg);
-  margin-left: rem(35px);
+  margin-left: rem(25px);
   @include phones{
     margin-left: rem(10px);
   }
@@ -193,5 +227,5 @@
   height: rem(20px);
   color: white;
   transform: rotate(-90deg);
-  margin-right: rem(10px);
+  margin-right: rem(35px);
 }

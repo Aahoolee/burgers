@@ -25,13 +25,63 @@ openMenu();
 
 ///// СЛАЙДЕР-КАРУСЕЛЬ
 
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items:2,
-        lazyLoad:true,
-        loop:true,
-        margin:10
-    });
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel({
+//         items:2,
+//         lazyLoad:true,
+//         loop:true,
+//         margin:10
+//     });
+// });
+
+$(function () {
+
+    const moveSlide = function(container, slideNum) {
+        const items = container.find('.slider__item'),
+                activeSlide = items.filter('.slider__item--active'),
+                reqItem = items.eq(slideNum),
+                reqIndex = reqItem.index(),
+                list = container.find('slider__list'),
+                duration = 500;
+
+        if (reqItem.length) {
+            list.animate({
+                'left': -reqIndex * 100 + '%'
+            }, duration, function () {
+                activeSlide.removeClass('slider__item--active');
+                reqItem.addClass('slider__item--active');
+            });
+        }
+    };
+
+
+   $('.slider__arrow').on('click', function(e) {
+       e.preventDefault();
+       const $this = $(this),
+            container = $this.closest('.slider__components'),
+            items = container.find('.slider__item'),
+            activeSlide = items.filter('.slider__item--active'),
+            nextSlide = activeSlide.next(),
+            prevSlide = activeSlide.prev();
+
+       if ($this.hasClass('slider__arrow--right')) {
+           if(nextSlide.length){
+               moveSlide(container, nextSlide.index());
+           } else {
+               moveSlide(container, items.first().index());
+           }
+       }
+
+       if ($this.hasClass('slider__arrow--left')) {
+           if(prevSlide.length){
+               moveSlide(container, prevSlide.index());
+           } else {
+               moveSlide(container, items.last().index());
+           }
+       }
+
+   });
+
 });
 
 ///// АККОРДЕОН КОМАНДА
@@ -75,11 +125,29 @@ $(document).ready(function() {
     });
 });
 
+// $(document).ready(function() {
+//     $('.team__accordeon--name').click(function() {
+//         var team =$(this).parent('.team__accordeon--item');
+//
+//         if(!team.hasClass('team__accordeon--item-active')) {
+//             $('.team__accordeon--container').slideUp(400);
+//             $('.team__accordeon--item').removeClass('team__accordeon--item-active');
+//             team.addClass('team__accordeon--item-active');
+//             team.children('.team__accordeon--container').slideDown(400);
+//         } else {
+//             $(this).parent('.team__accordeon--item').removeClass('team__accordeon--item-active');
+//         }
+//
+//         return false;
+//     });
+// });
+
+
 ///// АККОРДЕОН МЕНЮ
 
-$(document).ready(function() {
+$(document).ready(function() { // DOMContentLoaded(function)
     $('.menu-item__title').click(function() {
-        var menu=$(this).parent('.menu-item');
+        var menu=$(this).parent('.menu-item'); // this указывает на .menu-item__title
 
         if(!menu.hasClass('active')) {
             $('.menu-item__content').hide();
@@ -97,7 +165,28 @@ $(document).ready(function() {
 
 ///// МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ
 
+function openReview() {
+    const openBtnRev = document.querySelector('.feeds__item--btn');
+    const feed = $('.feeds-popup');
+    const closeBtnRev = document.querySelector('.feeds-popup__button');
+    const wrapper = document.querySelector('.wrapper');
 
+    openBtnRev.addEventListener('click', function() {
+        feed.fadeIn();
+        feed.addClass('.display-section');
+        // menu.style.display = 'block';
+        wrapper.style.overflow = 'hidden';
+    });
+
+    closeBtnRev.addEventListener('click', function () {
+        feed.fadeOut();
+        feed.removeClass('.display-section');
+        // menu.style.display = 'none';
+        wrapper.style.overflow = 'visible';
+    });
+}
+
+openReview();
 
 
 ///// КАРТА
