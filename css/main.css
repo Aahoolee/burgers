@@ -503,9 +503,7 @@ footer {
       margin-top: 4%; } }
 
 .slider__list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

@@ -34,7 +34,7 @@ openMenu();
 //     });
 // });
 
-$(function () {
+$(document).ready(function() {
 
     const moveSlide = function(container, slideNum) {
         const items = container.find('.slider__item'),
@@ -58,7 +58,7 @@ $(function () {
    $('.slider__arrow').on('click', function(e) {
        e.preventDefault();
        const $this = $(this),
-            container = $this.closest('.slider__components'),
+            container = $this.closest('.slider__container'),
             items = container.find('.slider__item'),
             activeSlide = items.filter('.slider__item--active'),
             nextSlide = activeSlide.next(),
@@ -70,6 +70,8 @@ $(function () {
            } else {
                moveSlide(container, items.first().index());
            }
+           console.log(nextSlide);
+
        }
 
        if ($this.hasClass('slider__arrow--left')) {
@@ -78,11 +80,14 @@ $(function () {
            } else {
                moveSlide(container, items.last().index());
            }
+           console.log('hello left');
+
        }
 
    });
 
 });
+
 
 ///// АККОРДЕОН КОМАНДА
 
