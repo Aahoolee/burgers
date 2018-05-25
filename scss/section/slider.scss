@@ -7,8 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: 100vw;
-  margin: 0;
+  width: 100vw;
   @include tablets{
     flex-direction: column;
     margin-top: 4%;
@@ -16,37 +15,32 @@
 }
 
 .slider__components{
+  overflow-x: hidden;
 
 }
 
 .slider__list{
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   white-space: nowrap;
-  position: absolute;
-  top: 23%;
-  left: 14%;
-  overflow: hidden;
-  height: rem(475px);
-
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .slider__item{
-  //display: flex;
-  //flex-flow: row nowrap;
-  display: none;
+  display: inline-flex;
   white-space: normal;
-  width: rem(1060px);
-  //height: 100%;
+
+  width: 100%;
+
 }
 
 .slider__item--active{
-  display: inline-flex;
+ overflow: visible;
 }
 
 .slider__burger{
-  //width: 50%;
-  //height: 100%;
   margin-top: 3%;
   justify-content: center;
   align-items: center;
@@ -75,7 +69,7 @@
 .slider__burger--pic{
   width: rem(460px);
   //max-height: rem(310px);
-  margin-left: -32px;
+  //margin-left: -32px;
   @include tablets{
     width: 90%;
     margin-left: rem(30px);
@@ -212,20 +206,24 @@
 }
 
 .slider__arrow-left-pic{
+  position: absolute;
+  left: 3%;
   width: rem(30px);
   height: rem(20px);
   color: white;
   transform: rotate(90deg);
-  margin-left: rem(25px);
+  //margin-left: rem(25px);
   @include phones{
     margin-left: rem(10px);
   }
 }
 
 .slider__arrow-right-pic{
+  position: absolute;
+  left: 97%;
   width: rem(30px);
   height: rem(20px);
   color: white;
   transform: rotate(-90deg);
-  margin-right: rem(35px);
+  //margin-right: rem(35px);
 }

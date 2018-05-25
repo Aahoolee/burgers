@@ -23,16 +23,206 @@ function openMenu() {
 
 openMenu();
 
-///// СЛАЙДЕР-КАРУСЕЛЬ
+///// One Page Scroll
 
-// $(document).ready(function(){
-//     $(".owl-carousel").owlCarousel({
-//         items:2,
-//         lazyLoad:true,
-//         loop:true,
-//         margin:10
+const sections = $('.section');
+const display = $('.maincontent');
+let inScroll = false;
+
+const setActiveMenuItem = itemEq => {
+    $('.scroll__item')
+        .eq(itemEq)
+        .addClass('scroll__item--active')
+        .siblings()
+        .removeClass('scroll__item--active');
+
+};
+
+const performTransition = sectionEq => {
+  const position = `${sectionEq * -100}%`;
+  if (inScroll) return;
+
+  inScroll = true;
+
+  sections
+      .eq(sectionEq)
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
+
+  display.css({
+      transform: `translate(0, ${position})`,
+      '-webkit-transform': `translate(0, ${position})`
+  });
+
+
+  const transitionDuration = parseInt(display.css('transition-duration')) * 100; // время в мс
+  setTimeout(() => {
+      inScroll = false;
+      setActiveMenuItem(sectionEq);
+
+  }, transitionDuration + 300); // за 300 мс проходит инерция мыши
+
+};
+
+const scrollToSection = direction => {
+    const activeSection = sections.filter('.active');
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
+
+    if (direction === 'up' && prevSection.length){
+        performTransition(prevSection.index());
+    }
+
+    if (direction === 'down' && nextSection.length){
+        performTransition(nextSection.index());
+
+    }
+
+    // switch (true) {
+    //     case direction === 'down' && prevSection.length:
+    //         performTransition(prevSection.index());
+    //         break;
+    //     case direction === 'up' && nextSection.length:
+    //         performTransition(nextSection.index());
+    //         break;
+    //
+    // }
+};
+
+$(document).on({
+    wheel: event => { // прокручивание мышью
+        const deltaY = event.originalEvent.deltaY;
+        const direction = deltaY > 0
+        ? 'down'
+        : 'up'
+
+        scrollToSection(direction);
+    },
+
+    keydown: event => { // прокручивание слайдера с клавиатуры
+        // console.log(event.keyCode);
+        switch (event.keyCode){
+            case 40:
+                scrollToSection('down');
+                break;
+            case 38:
+                scrollToSection('up');
+                break;
+        }
+    }
+
+});
+
+$('[data-scroll-to]').on('click', e => {
+    e.preventDefault();
+
+    const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+    performTransition(target);
+
+});
+
+// ///// OPS Вовы
+//
+// const sections = $(".section");
+// const display = $(".maincontent");
+// let inScroll = false;
+//
+// // const mobileDetect = new MobileDetect(window.navigator.userAgent);
+// // const isMobile = mobileDetect.mobile();
+//
+// const setActiveMenuItem = itemEq => {
+//     $('.fixed-menu__item').eq(itemEq).addClass('active')
+//         .siblings().removeClass('active')
+// }
+//
+// const performTransition = sectionEq => {
+//     const position = `${sectionEq * -100}%`;
+//
+//     if (inScroll) return;
+//
+//     inScroll = true;
+//
+//     sections
+//         .eq(sectionEq)
+//         .addClass("active")
+//         .siblings()
+//         .removeClass("active");
+//
+//     display.css({
+//         transform: `translate(0, ${position})`,
+//         "-webkit-transform": `translate(0, ${position})`
 //     });
+//
+//     setTimeout(() => {
+//         inScroll = false;
+//         setActiveMenuItem(sectionEq);
+//     }, 1300); // продолжительность анимации + 300ms - потому что закончится инерция
+// };
+//
+// const scrollToSection = direction => {
+//     const activeSection = sections.filter(".active");
+//     const nextSection = activeSection.next();
+//     const prevSection = activeSection.prev();
+//
+//     if (direction === "up" && prevSection.length) {
+//         performTransition(prevSection.index());
+//     }
+//
+//     if (direction === "down" && nextSection.length) {
+//         performTransition(nextSection.index());
+//     }
+// };
+//
+// $(document).on({
+//     wheel: e => {
+//         const deltaY = e.originalEvent.deltaY;
+//         const direction = deltaY > 0 ? "down" : "up";
+//
+//         scrollToSection(direction);
+//     },
+//     keydown: e => {
+//         switch (e.keyCode) {
+//             case 40:
+//                 scrollToSection("down");
+//                 break;
+//
+//             case 38:
+//                 scrollToSection("up");
+//                 break;
+//         }
+//     },
+//     touchmove: e => e.preventDefault()
+//
+//     // touchstart touchend touchmove
 // });
+//
+//
+// $('[data-scroll-to]').on('click', e => {
+//     e.preventDefault();
+//
+//     const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+//
+//
+//     performTransition(target);
+//
+// })
+//
+// if (isMobile) {
+//     $(document).swipe({
+//         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+//             /**
+//              * плагин возвращает фактическое...
+//              * ...
+//              */
+//             const scrollDirection = direction === 'down' ? 'up' : 'down';
+//
+//             scrollToSection(scrollDirection);
+//         }
+//     });
+// }
+
+///// СЛАЙДЕР-КАРУСЕЛЬ
 
 $(document).ready(function() {
 
@@ -41,7 +231,7 @@ $(document).ready(function() {
                 activeSlide = items.filter('.slider__item--active'),
                 reqItem = items.eq(slideNum),
                 reqIndex = reqItem.index(),
-                list = container.find('slider__list'),
+                list = container.find('.slider__list'),
                 duration = 500;
 
         if (reqItem.length) {
@@ -52,6 +242,7 @@ $(document).ready(function() {
                 reqItem.addClass('slider__item--active');
             });
         }
+        console.log(slideNum);
     };
 
 
@@ -70,7 +261,6 @@ $(document).ready(function() {
            } else {
                moveSlide(container, items.first().index());
            }
-           console.log(nextSlide);
 
        }
 
@@ -80,7 +270,6 @@ $(document).ready(function() {
            } else {
                moveSlide(container, items.last().index());
            }
-           console.log('hello left');
 
        }
 
@@ -154,13 +343,13 @@ $(document).ready(function() { // DOMContentLoaded(function)
     $('.menu-item__title').click(function() {
         var menu=$(this).parent('.menu-item'); // this указывает на .menu-item__title
 
-        if(!menu.hasClass('active')) {
+        if(!menu.hasClass('menu-item__active')) {
             $('.menu-item__content').hide();
-            $('.menu-item').removeClass('active');
-            menu.addClass('active');
+            $('.menu-item').removeClass('menu-item__active');
+            menu.addClass('menu-item__active');
             menu.children('.menu-item__content').show();
         } else {
-            $(this).parent('.menu-item').removeClass('active');
+            $(this).parent('.menu-item').removeClass('menu-item__active');
         }
 
         return false;
@@ -272,65 +461,4 @@ function init() {
     });
     map.geoObjects.add(clusterer);
     clusterer.add(geoObjects);
-
-    // var placemark = new ymaps.Placemark([59.97, 30.31], {
-    //     hintContent: '<div class="map__hint">ул. Литераторов, д. 19 </div>',
-    //     balloonContent: [
-    //         '<div class="map__balloon">Бургерная на ул. Литераторов, д. 19, ' +
-    //         'тел. (812) 333-0085 </div>'
-    //     ]
-    // },
-    // {
-    //     iconLayout: 'default#image',
-    //     iconImageHref: 'img/icons/map-marker.svg',
-    //     iconImageSize: [46, 57]
-    // });
-    //
-    // var placemark1 = new ymaps.Placemark([59.88, 30.31], {
-    //         hintContent: '<div class="map__hint">Московский пр., д. 109 </div>',
-    //         balloonContent: [
-    //             '<div class="map__balloon">Бургерная на Московском, 109, ' +
-    //             'тел. (812) 333-0086 </div>'
-    //         ]
-    //     },
-    //     {
-    //         iconLayout: 'default#image',
-    //         iconImageHref: 'img/icons/map-marker.svg',
-    //         iconImageSize: [46, 57]
-    //     });
-    //
-    // var placemark2 = new ymaps.Placemark([59.9394, 30.3805], {
-    //         hintContent: '<div class="map__hint">пер. Дегтярный, д. 20 </div>',
-    //         balloonContent: [
-    //             '<div class="map__balloon">Бургерная на Дегтярном пер., д. 20, ' +
-    //             'тел. (812) 333-0087 </div>'
-    //         ]
-    //     },
-    //     {
-    //         iconLayout: 'default#image',
-    //         iconImageHref: 'img/icons/map-marker.svg',
-    //         iconImageSize: [46, 57]
-    //     });
-    //
-    // var placemark3 = new ymaps.Placemark([59.941, 30.49], {
-    //         hintContent: '<div class="map__hint">ул. Наставников, д. 11, к.1 </div>',
-    //         balloonContent: [
-    //             '<div class="map__balloon">Бургерная на Наставников, д. 11, к. 1, ' +
-    //             'тел. (812) 333-0088 </div>'
-    //         ]
-    //     },
-    //     {
-    //         iconLayout: 'default#image',
-    //         iconImageHref: 'img/icons/map-marker.svg',
-    //         iconImageSize: [46, 57]
-    //     });
-    //
-    //
-    // map.geoObjects.add(placemark);
-    // map.geoObjects.add(placemark1);
-    // map.geoObjects.add(placemark2);
-    // map.geoObjects.add(placemark3);
-
-
-
 }
