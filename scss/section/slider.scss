@@ -7,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+
   @include tablets{
     flex-direction: column;
     margin-top: 4%;
@@ -15,24 +15,28 @@
 }
 
 .slider__components{
-  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
 }
 
 .slider__list{
   display: inline-flex;
   align-items: center;
-  white-space: nowrap;
+  //white-space: nowrap;
   position: relative;
   top: 0;
   left: 0;
+  //width: 100%;
+
 }
 
 .slider__item{
   display: inline-flex;
   white-space: normal;
-
-  width: 100%;
+  width: rem(940px);
+  height: rem(470px);
 
 }
 
@@ -41,9 +45,13 @@
 }
 
 .slider__burger{
-  margin-top: 3%;
+  position: relative;
+  //margin-top: 3%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: rem(450px);
+
   @include tablets{
     width: 90%;
     margin-top: 7%;
@@ -52,9 +60,12 @@
 
 .slider__content{
   //max-width: 30%;
-  width: rem(460px);
+  width: rem(500px);
   color: white;
   padding-left: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @include tablets{
     width: 90%;
     text-align: center;
@@ -67,9 +78,9 @@
 }
 
 .slider__burger--pic{
-  width: rem(460px);
-  //max-height: rem(310px);
-  //margin-left: -32px;
+  max-width: 95%;
+  display: flex;
+  //margin: 10% 0;
   @include tablets{
     width: 90%;
     margin-left: rem(30px);
@@ -107,6 +118,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+    &:hover{
+      background: $orange;
+    }
 
   @include tablets{
     top: 12%;
@@ -128,6 +143,79 @@
     color: white;
     margin-bottom: 0;
   }
+}
+
+.slider__container--ingredients-popup:hover + .slider__container--ingredients-popup{
+  display: block;
+  transition: 1s;
+  opacity: 100;
+  cursor: pointer;
+}
+
+.slider__container--ingredients-popup{
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: rem(270px);
+  height: rem(330px);
+  background-color: rgba(white, 0.9);
+  border-radius: 5px;
+  display: none;
+  transition: 0.5s;
+}
+
+.ingredients-popup__active{
+  display: block;
+}
+
+.slider__container--ingredients-list{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.slider__container--ingredients-item{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: rem(10px);
+  font-weight: 500;
+
+}
+
+.ingredients-item__icon{
+
+}
+
+#beef{
+  fill: $orange_hover;
+}
+#buns{
+  fill: $yell;
+}
+#salad{
+  fill: $green;
+}
+#sauce{
+  fill: $orange_hover;
+}
+#cucumber{
+  fill: $green;
+}
+#cheese{
+  fill: $yell;
+}
+
+.ingredients-item__name{
+  padding-top: rem(10px);
+
+
+}
+
+.ingredients-item__weight{
+  padding-top: rem(10px);
+  //width: 150px;
 }
 
 .slider__container--energy{
@@ -162,7 +250,7 @@
 }
 .slider__container--energy-text{
   position: absolute;
-  top: 25%;
+  top: 32%;
   left: 25%;
   font-family: Gagalin, sans-serif;
   font-size: rem(20px);

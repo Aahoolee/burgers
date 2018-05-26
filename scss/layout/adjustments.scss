@@ -51,7 +51,7 @@
 .scroll__item{
   @include circle(6px, #fff);
   margin-bottom: 15px;
-  cursor: pointer;
+
 
 }
 
@@ -70,15 +70,8 @@
 }
 
 .scroll__link{
-
-  text-decoration: none;
-  //position: relative;
-  //content: "";
-  //width: 6px;
-  //height: 6px;
-  //border-radius: 50%;
-  //background-color: white;
-
+  border: rem(10px) solid transparent;
+  cursor: pointer;
 }
 
 .order-btn{

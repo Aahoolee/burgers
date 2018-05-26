@@ -1,4 +1,4 @@
-///// ПОЛНОЭКРАННОЕ МЕНЮ
+///// ------ПОЛНОЭКРАННОЕ МЕНЮ------
 
 function openMenu() {
     const openBtn = document.querySelector('.hamburger-link');
@@ -23,7 +23,9 @@ function openMenu() {
 
 openMenu();
 
-///// One Page Scroll
+
+
+///// ------One Page Scroll------
 
 const sections = $('.section');
 const display = $('.maincontent');
@@ -35,7 +37,6 @@ const setActiveMenuItem = itemEq => {
         .addClass('scroll__item--active')
         .siblings()
         .removeClass('scroll__item--active');
-
 };
 
 const performTransition = sectionEq => {
@@ -76,18 +77,7 @@ const scrollToSection = direction => {
 
     if (direction === 'down' && nextSection.length){
         performTransition(nextSection.index());
-
     }
-
-    // switch (true) {
-    //     case direction === 'down' && prevSection.length:
-    //         performTransition(prevSection.index());
-    //         break;
-    //     case direction === 'up' && nextSection.length:
-    //         performTransition(nextSection.index());
-    //         break;
-    //
-    // }
 };
 
 $(document).on({
@@ -222,7 +212,7 @@ $('[data-scroll-to]').on('click', e => {
 //     });
 // }
 
-///// СЛАЙДЕР-КАРУСЕЛЬ
+///// ------СЛАЙДЕР-КАРУСЕЛЬ------
 
 $(document).ready(function() {
 
@@ -245,7 +235,6 @@ $(document).ready(function() {
         console.log(slideNum);
     };
 
-
    $('.slider__arrow').on('click', function(e) {
        e.preventDefault();
        const $this = $(this),
@@ -261,7 +250,6 @@ $(document).ready(function() {
            } else {
                moveSlide(container, items.first().index());
            }
-
        }
 
        if ($this.hasClass('slider__arrow--left')) {
@@ -270,37 +258,28 @@ $(document).ready(function() {
            } else {
                moveSlide(container, items.last().index());
            }
-
        }
-
    });
+});
 
+/////------ингридиенты в слайдере------
+
+$(document).ready(()=>{
+
+    const compBtn = $('.slider__container--ingredients');
+    const popupMenu = $('.slider__container--ingredients-popup');
+
+    $(compBtn).on('click', e => {
+        $(popupMenu).toggleClass('ingredients-popup__active');
+        if (popupMenu.classList.contains('ingredients-popup__active')) {
+                    compBtn.style.background = "#e45028"
+                }
+
+    })
 });
 
 
-///// АККОРДЕОН КОМАНДА
-
-// function openPosition() {
-//     // $('.team__accordeon--item').click(function () {
-//     //
-//     // })
-//     const openPos = document.querySelector('.team__accordeon--item');
-//     const active = $('team__accordeon--item-active');
-//
-//     openPos.addEventListener('click', function(){
-//         active.slideDown();
-//         active.addClass('.team__accordeon--item-active');
-//
-//     });
-//     const closePos = document.querySelector('.team__accordeon--item-active');
-//
-//     closePos.addEventListener('click', function () {
-//         active.slideUp();
-//         active.removeClass('.team__accordeon--item-active');
-//     });
-// }
-//
-// openPosition();
+///// ------АККОРДЕОН КОМАНДА------
 
 $(document).ready(function() {
     $('.team__accordeon--name').click(function() {
@@ -319,25 +298,7 @@ $(document).ready(function() {
     });
 });
 
-// $(document).ready(function() {
-//     $('.team__accordeon--name').click(function() {
-//         var team =$(this).parent('.team__accordeon--item');
-//
-//         if(!team.hasClass('team__accordeon--item-active')) {
-//             $('.team__accordeon--container').slideUp(400);
-//             $('.team__accordeon--item').removeClass('team__accordeon--item-active');
-//             team.addClass('team__accordeon--item-active');
-//             team.children('.team__accordeon--container').slideDown(400);
-//         } else {
-//             $(this).parent('.team__accordeon--item').removeClass('team__accordeon--item-active');
-//         }
-//
-//         return false;
-//     });
-// });
-
-
-///// АККОРДЕОН МЕНЮ
+///// ------АККОРДЕОН МЕНЮ------
 
 $(document).ready(function() { // DOMContentLoaded(function)
     $('.menu-item__title').click(function() {
@@ -357,33 +318,67 @@ $(document).ready(function() { // DOMContentLoaded(function)
 });
 
 
-///// МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ
+///// ------МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ------
 
-function openReview() {
-    const openBtnRev = document.querySelector('.feeds__item--btn');
+// function openReview() {
+//     const openBtnRev = document.querySelector('.feeds__item--btn');
+//     const feed = $('.feeds-popup');
+//     const closeBtnRev = document.querySelector('.feeds-popup__button');
+//     const wrapper = document.querySelector('.wrapper');
+//
+//     openBtnRev.addEventListener('click', function() {
+//         feed.fadeIn();
+//         feed.addClass('.display-section');
+//         // menu.style.display = 'block';
+//         wrapper.style.overflow = 'hidden';
+//     });
+//
+//     closeBtnRev.addEventListener('click', function () {
+//         feed.fadeOut();
+//         feed.removeClass('.display-section');
+//         // menu.style.display = 'none';
+//         wrapper.style.overflow = 'visible';
+//     });
+// }
+//
+// openReview();
+
+    const openBtnRev = $('.feeds__item--btn');
     const feed = $('.feeds-popup');
-    const closeBtnRev = document.querySelector('.feeds-popup__button');
-    const wrapper = document.querySelector('.wrapper');
+    const closeBtnRev = $('.feeds-popup__button');
+    const wrapper = $('.wrapper');
 
-    openBtnRev.addEventListener('click', function() {
+$(document).ready(() => {
+    $(openBtnRev).on('click', e => {
         feed.fadeIn();
-        feed.addClass('.display-section');
-        // menu.style.display = 'block';
-        wrapper.style.overflow = 'hidden';
+        wrapper.style.overflow = "hidden"
     });
 
-    closeBtnRev.addEventListener('click', function () {
-        feed.fadeOut();
-        feed.removeClass('.display-section');
-        // menu.style.display = 'none';
-        wrapper.style.overflow = 'visible';
-    });
-}
-
-openReview();
+    $(closeBtnRev).on('click', e => {
+        feed.fadeOut()
+    })
 
 
-///// КАРТА
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///// ------КАРТА------
 
 ymaps.ready(init);
 
