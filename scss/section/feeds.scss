@@ -166,13 +166,19 @@
 .feeds-popup__window{
   position: relative;
   top: 30%;
-  left: 30%;
-  width: rem(460px);
-  height: rem(255px);
+  left: 35%;
+  width: 30%;
+  min-height: rem(255px);
   border-radius: 10px;
   background-color: #fff;
   padding: 3% 5%;
   //transform: translate(88%, 92%);
+
+  @include tablets{
+    top: 35%;
+    left: 25%;
+    width: 50%;
+  }
 }
 
 .feeds-popup__title{

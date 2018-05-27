@@ -46,8 +46,8 @@
   }
 
   &-item__title{
-
     cursor: pointer;
+    transition: 0.7s;
 
     &-name{
       position: relative;
@@ -89,7 +89,7 @@
 }
 
 .menu-item__active{
-  transition: 0.5s;
+  transition: 0.7s;
   .menu-item__title-name{
     color: $yell;
   }
