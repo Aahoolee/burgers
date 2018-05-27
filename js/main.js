@@ -328,11 +328,11 @@ $(document).ready(function() { // DOMContentLoaded(function)
             $('.menu-item__content').stop().animate({
                 width: '0'
             }, 700);
-            $('.menu-item').removeClass('menu-item__active');
+            $('.menu-item').slideDown().removeClass('menu-item__active');
+
             menu.addClass('menu-item__active');
-            $(this).stop().animate(700);
             menu.find('.menu-item__content').stop().animate({
-                width: '100%'
+                'width': "400px"
             }, 700);
         } else {
             $('.menu-item__content').stop().animate({
