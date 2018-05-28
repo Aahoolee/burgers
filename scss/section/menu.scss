@@ -40,14 +40,14 @@
     &__content{
       //height: 100%;
       background: rgba($grey, 0.93);
-      width:0;
+      width: 0;
       overflow: hidden;
     }
   }
 
   &-item__title{
     cursor: pointer;
-    transition: 0.7s;
+    //transition: 0.7s;
 
     &-name{
       position: relative;
@@ -95,6 +95,7 @@
   }
   .menu-item__content{
     //width: 100%;
+    //animation-duration: 1s;
     //@include phones{
     //  //position: absolute;
     //  width: 100%;

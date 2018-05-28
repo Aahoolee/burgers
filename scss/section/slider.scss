@@ -1,6 +1,10 @@
 .slider{
   background: linear-gradient($yell, $orange_gradient, $yell);
 
+  @include phones{
+    height: 100%;
+  }
+
 }
 
 .slider__container{
@@ -35,7 +39,7 @@
   overflow-x: hidden;
   @include phones{
     padding-top: 70px;
-    //min-height: rem(800px);
+    height: 100%;
   }
 }
 
@@ -162,7 +166,7 @@
 .slider__content--text{
 
   @include phones{
-    font-size: rem(18px);
+    font-size: rem(16px);
     font-weight: 300;
   }
 }
