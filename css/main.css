@@ -1227,14 +1227,17 @@ footer {
     height: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: rgba(47, 50, 52, 0.7);
+    background-color: rgba(47, 50, 52, 0.8);
     padding: 12% 6%;
     opacity: 0;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
     .feeds__item--content:hover {
-      opacity: 1; }
+      opacity: 1;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
     @media screen and (max-width: 768px) {
       .feeds__item--content {
         text-align: center;
@@ -1267,7 +1270,10 @@ footer {
     font-size: 0.875rem;
     line-height: 1.5rem;
     margin-top: 1.3125rem;
-    margin-bottom: 0.75rem; }
+    margin-bottom: 0.75rem;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
     @media screen and (max-width: 768px) {
       .feeds__item--text {
         margin: 0;
