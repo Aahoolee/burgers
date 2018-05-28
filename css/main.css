@@ -1153,9 +1153,6 @@ footer {
 .menu-item__active .menu-item__title-name {
   color: #f9b43b; }
 
-.menu-item__active .menu-item__content {
-  width: auto; }
-
 @media screen and (max-width: 480px) {
   .active-phones {
     position: absolute;

@@ -332,7 +332,7 @@ $(document).ready(function() { // DOMContentLoaded(function)
 
             menu.addClass('menu-item__active');
             menu.find('.menu-item__content').stop().animate({
-                'width': "400px"
+                'width': "100%"
             }, 700);
         } else {
             $('.menu-item__content').stop().animate({
