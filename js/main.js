@@ -331,6 +331,7 @@ $(document).ready(function() { // DOMContentLoaded(function)
             $('.menu-item').slideDown().removeClass('menu-item__active');
 
             menu.addClass('menu-item__active');
+
             menu.find('.menu-item__content').stop().animate({
                 'width': "100%"
             }, 700);
@@ -345,6 +346,8 @@ $(document).ready(function() { // DOMContentLoaded(function)
         return false;
     });
 });
+
+
 
 
 ///// ------МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ------

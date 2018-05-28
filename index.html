@@ -731,73 +731,73 @@
             <section id="order" class="order section">
                 <div class="order__container container">
                     <h2 class="order__title section-title">Закажите доставку</h2>
-                    <form action="">
+                    <form action="server.php" method="post" id="order-form">
                         <div class="form">
                             <div class="form__nameblock">
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="user-name" class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-name" name="user-name" type="tel" class="form__input">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="user-phone" class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input type="tel" class="form__input">
+                                        <input id="user-phone" name="user-phone" type="tel" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="user-street" class="form__block">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-street" name="user-street" type="text" class="form__input">
                                     </label>
                                 </div>
                                 <div class="form__row">
-                                    <label class="form__block">
+                                    <label for="user-house" class="form__block">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-house" name="user-house" type="number" class="form__input">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="user-build" class="form__block">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-build" name="user-build" type="number" class="form__input">
                                     </label>
-                                    <label class="form__block">
+                                    <label for="user-apart" class="form__block">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-apart" name="user-apart" type="number" class="form__input">
                                     </label>
-                                    <label class="form__block form__block--floor">
+                                    <label for="user-floor" class="form__block form__block--floor">
                                         <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input">
+                                        <input id="user-floor" name="user-floor" type="number" class="form__input">
                                     </label>
                                 </div>
                             </div>
                             <div class="form__commentblock">
                                 <div class="form__row_comment">
-                                    <label class="form__block">
+                                    <label for="user-comment" class="form__block">
                                         <div class="form__title">Комментарий</div>
-                                        <textarea class="form__input form__input_comment" rows="6"></textarea>
+                                        <textarea id="user-comment" name="user-comment" class="form__input form__input_comment" rows="6"></textarea>
                                     </label>
                                 </div>
                                 <div class="form__row_pay">
-                                    <label class="form__block">
-                                        <input type="radio" name="radio" class="form__radio" value="yes">
+                                    <label for="pay-cash" class="form__block">
+                                        <input id="pay-cash" type="radio" name="payment" class="form__radio" value="Наличные">
                                         <span class="form__block_radio"></span>
                                         <span class="form__title">Потребуется сдача</span>
                                     </label>
-                                    <label class="form__block">
-                                        <input type="radio" name="radio" class="form__radio" value="no">
+                                    <label for="pay-card" class="form__block">
+                                        <input id="pay-card" type="radio" name="payment" class="form__radio" value="Оплата картой">
                                         <span class="form__block_radio"></span>
                                         <span class="form__title">Оплата по карте</span>
                                     </label>
                                 </div>
                                 <div class="form__row_call">
-                                    <label class="form__block">
-                                        <input type="checkbox" class="form__checkbox">
+                                    <label for="callback" class="form__block">
+                                        <input id="callback" name="callback" type="checkbox" class="form__checkbox">
                                         <span class="form__block_checkbox"></span>
                                         <span class="form__title">Не перезванивать</span>
                                     </label>
                                 </div>
                                 <div class="form__row_btn">
                                     <div class="order__button">
-                                        <a href="#" class="order-btn">Заказать</a>
+                                        <button type="submit" class="order-btn">Заказать</button>
                                     </div>
                                     <div class="order-reset">
                                         <input type="reset" class="reset-btn" value="Очистить">
@@ -919,6 +919,7 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="order.js"></script>
     <script src="js/main.js"></script>
 
 
