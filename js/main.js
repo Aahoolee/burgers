@@ -30,7 +30,7 @@ const performTransition = sectionEq => {
     });
 
 
-    const transitionDuration = parseInt(display.css('transition-duration')) * 100; // время в мс
+    const transitionDuration = parseInt(display.css('transition-duration')) * 1000; // время в мс
     setTimeout(() => {
         inScroll = false;
         setActiveMenuItem(sectionEq);
@@ -219,14 +219,14 @@ $(document).ready(() => {
 
     $('.hamburger-link').on('click', () => {
         menu.fadeIn(400);
-        $('body').on('wheel.modal', () => {
+        $('body').on('wheel.modal, mousewheel.modal', () => {
             return false;
         })
     });
 
     $('.hamburger-popup__button, .hamburger-popup__link').on('click', () => {
         menu.fadeOut(400);
-        $('body').off('wheel.modal')
+        $('body').off('wheel.modal, mousewheel.modal')
     })
 });
 
@@ -319,23 +319,48 @@ $(document).ready(function () {
 
 ///// ------АККОРДЕОН МЕНЮ------
 
+// $(document).ready(function () { // DOMContentLoaded(function)
+//     $('.menu-item__title').click(function () {
+//         var menu = $(this).closest('.menu-item'); // this указывает на .menu-item__title
+//
+//         if (!menu.hasClass('menu-item__active')) {
+//             $('.menu-item__content').stop().animate({
+//                 width: '0'
+//             }, 700);
+//             $('.menu-item').removeClass('menu-item__active');
+//
+//             menu.addClass('menu-item__active');
+//             menu.find('.menu-item__content').stop().animate({
+//                 'width': "100%"
+//             }, 700);
+//         } else {
+//             $('.menu-item__content').stop().animate({
+//                 width: '0'
+//             }, 700);
+//             $(this).closest('.menu-item').removeClass('menu-item__active');
+//
+//         }
+//
+//         // return false;
+//     });
+// });
+
 $(document).ready(function () { // DOMContentLoaded(function)
     $('.menu-item__title').click(function () {
         var menu = $(this).closest('.menu-item'); // this указывает на .menu-item__title
 
         if (!menu.hasClass('menu-item__active')) {
-            $('.menu-item__content').stop().animate({
-                width: '0'
-            }, 700);
-            $('.menu-item').removeClass('menu-item__active');
+            $('.menu-item').stop().animate({
+                width: '80'
+            }, 700).removeClass('menu-item__active');
 
             menu.addClass('menu-item__active');
             menu.find('.menu-item__content').stop().animate({
                 'width': "100%"
             }, 700);
         } else {
-            $('.menu-item__content').stop().animate({
-                width: '0'
+            $('.menu-item').stop().animate({
+                width: '80'
             }, 700);
             $(this).closest('.menu-item').removeClass('menu-item__active');
 
@@ -344,8 +369,6 @@ $(document).ready(function () { // DOMContentLoaded(function)
         // return false;
     });
 });
-
-
 
 ///// ------МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ------
 
