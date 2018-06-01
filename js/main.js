@@ -106,7 +106,7 @@ if (isMobile) {
             scrollToSection(direction);
             // $(this).text("You swiped " + direction );
         }
-    });     
+    });
 }
 
 
