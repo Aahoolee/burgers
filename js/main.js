@@ -3,6 +3,8 @@
 const sections = $('.section');
 const display = $('.maincontent');
 let inScroll = false;
+const mobileDetect = new mobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 const setActiveMenuItem = itemEq => {
     $('.scroll__item')
@@ -73,7 +75,9 @@ $(document).on({
                 scrollToSection('up');
                 break;
         }
-    }
+    },
+    touchmove: e => e.preventDefault()
+
 
 });
 
@@ -84,6 +88,30 @@ $('[data-scroll-to]').on('click', e => {
     performTransition(target);
 
 });
+
+/// OPS for mobile  (touch swipe js)
+
+if (isMobile) {
+    $(document).swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(
+            event,
+            direction,
+            distance,
+            duration,
+            fingerCount,
+            fingerData
+        ) {
+            const swipeDirection = direction === 'down' ? 'up' : 'down';
+            scrollToSection(direction);
+            // $(this).text("You swiped " + direction );
+        }
+    });     
+}
+
+
+
+
 
 // ///// OPS Вовы
 //
