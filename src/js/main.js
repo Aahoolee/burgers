@@ -3,8 +3,11 @@
 const sections = $('.section');
 const display = $('.maincontent');
 let inScroll = false;
-const mobileDetect = new mobileDetect(window.navigator.userAgent);
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
+
+// const mobileDetect = new MobileDetect(window.navigator.userAgent);
+// const isMobile = mobileDetect.mobile();
 
 const setActiveMenuItem = itemEq => {
     $('.scroll__item')
@@ -60,7 +63,7 @@ $(document).on({
         const deltaY = event.originalEvent.deltaY;
         const direction = deltaY > 0
             ? 'down'
-            : 'up'
+            : 'up';
 
         scrollToSection(direction);
     },
@@ -91,20 +94,34 @@ $('[data-scroll-to]').on('click', e => {
 
 /// OPS for mobile  (touch swipe js)
 
+// if (isMobile) {
+//     $(document).swipe( {
+//         //Generic swipe handler for all directions
+//         swipe:function(
+//             event,
+//             direction,
+//             distance,
+//             duration,
+//             fingerCount,
+//             fingerData
+//         ) {
+//             const swipeDirection = direction === 'down' ? 'up' : 'down';
+//             scrollToSection(direction);
+//             // $(this).text("You swiped " + direction );
+//         }
+//     });
+// }
+
 if (isMobile) {
-    $(document).swipe( {
-        //Generic swipe handler for all directions
-        swipe:function(
-            event,
-            direction,
-            distance,
-            duration,
-            fingerCount,
-            fingerData
-        ) {
-            const swipeDirection = direction === 'down' ? 'up' : 'down';
-            scrollToSection(direction);
-            // $(this).text("You swiped " + direction );
+    $(document).swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+            /**
+             * плагин возвращает фактическое...
+             * ...
+             */
+            const scrollDirection = direction === 'down' ? 'up' : 'down';
+
+            scrollToSection(scrollDirection);
         }
     });
 }
