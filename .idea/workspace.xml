@@ -2,149 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea179f0-74a6-4b1b-a754-3c26d2ed81ea" name="Default" comment="main section">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main-dist.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main-dist.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/section/map.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/section/menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/section/order.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-b-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-b-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-light-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-light-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-medium-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-medium-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/Ubuntu/ubuntu-regular-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/gagalin-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/gagalin-regular-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/lifehack_medium-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/lifehack_medium-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/lifehack_medium-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/[Originals]/header-screen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/footer_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/header-screen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/map_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/menu_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/order_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/slider_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/team_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg/we-screen_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_beef.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_buns.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_cheese.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_cucumber.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_salad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_ingridients_sauce.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/burger_kkal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/crop_feeds/feed-man-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/feed-man-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/header-screen_burger-drops.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/header-screen_burger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/menu-diet-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/menu-meat-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/menu-veg-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/content/team-man-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/android-chrome-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/android-chrome-384x384.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/mstile-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/safari-pinned-tab.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/favicon_package_v0.16/site.webmanifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/arrow-scroll.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/beef.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/buns.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/burger.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/cheese.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/cucumber.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/drops.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/fb.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/hand.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/inst.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/kkal.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/map-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/map-marker.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/meat.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/natural.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/phone.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/polygon-down.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/polygon-up.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/salad.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/sauce.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/sprite.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/icons/vk.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/bacon_cheeseburger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/burger_ink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/burger_sandwich.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/chicken_burger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/spicy_shrimp_burger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/we-screen_hand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/we-screen_meat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/we-screen_natural.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fancybox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/order.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/mixin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/mixin.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/mixin.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/sprite.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/variables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/variables.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/config/variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/adjustments.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/adjustments.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/base.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/fonts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/fonts.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/layout/fonts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/about.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/about.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/feeds.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/feeds.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/hamburger-popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/main-section.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/main-section.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/main-section.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/map.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/order.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/slider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/team.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/section/team.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -157,14 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5003199">
+    <splitter split-orientation="horizontal" split-proportion="0.28982726">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/gulpfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="760">
-                  <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+                <state relative-caret-position="475">
+                  <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -174,11 +36,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="589">
-                  <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                <state relative-caret-position="608">
+                  <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/node_modules/balanced-match/README.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="475">
+                  <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -234,11 +106,12 @@
         <option value="$PROJECT_DIR$/scss/section/slider.scss" />
         <option value="$PROJECT_DIR$/scss/section/menu.scss" />
         <option value="$PROJECT_DIR$/scss/section/hamburger-popup.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/scss/layout/adjustments.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
   </component>
@@ -286,11 +159,6 @@
             <path>
               <item name="burger-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="burger-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="burger-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="burger-project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +231,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="528585000" />
+    <option name="totallyTimeSpent" value="530220000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -465,13 +333,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/icons/arrow-scroll.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/section/form.scss" />
     <entry file="file://$PROJECT_DIR$/img/bg/map_bg.jpg">
       <provider selected="true" editor-type-id="images">
@@ -719,22 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -743,10 +588,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/balanced-match/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="475">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
