@@ -16,11 +16,14 @@
 }
 
 .section{
-  height: 100%;
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
+
+  @include tablets{
+    height: 100%;
+  }
 }
 
 .container{

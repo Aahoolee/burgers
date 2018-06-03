@@ -94,34 +94,20 @@ $('[data-scroll-to]').on('click', e => {
 
 /// OPS for mobile  (touch swipe js)
 
-// if (isMobile) {
-//     $(document).swipe( {
-//         //Generic swipe handler for all directions
-//         swipe:function(
-//             event,
-//             direction,
-//             distance,
-//             duration,
-//             fingerCount,
-//             fingerData
-//         ) {
-//             const swipeDirection = direction === 'down' ? 'up' : 'down';
-//             scrollToSection(direction);
-//             // $(this).text("You swiped " + direction );
-//         }
-//     });
-// }
-
 if (isMobile) {
-    $(document).swipe({
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-            /**
-             * плагин возвращает фактическое...
-             * ...
-             */
-            const scrollDirection = direction === 'down' ? 'up' : 'down';
-
-            scrollToSection(scrollDirection);
+    $(document).swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(
+            event,
+            direction,
+            distance,
+            duration,
+            fingerCount,
+            fingerData
+        ) {
+            const swipeDirection = direction === 'down' ? 'up' : 'down';
+            scrollToSection(swipeDirection);
+            // $(this).text("You swiped " + direction );
         }
     });
 }
@@ -364,48 +350,23 @@ $(document).ready(function () {
 
 ///// ------АККОРДЕОН МЕНЮ------
 
-// $(document).ready(function () { // DOMContentLoaded(function)
-//     $('.menu-item__title').click(function () {
-//         var menu = $(this).closest('.menu-item'); // this указывает на .menu-item__title
-//
-//         if (!menu.hasClass('menu-item__active')) {
-//             $('.menu-item__content').stop().animate({
-//                 width: '0'
-//             }, 700);
-//             $('.menu-item').removeClass('menu-item__active');
-//
-//             menu.addClass('menu-item__active');
-//             menu.find('.menu-item__content').stop().animate({
-//                 'width': "100%"
-//             }, 700);
-//         } else {
-//             $('.menu-item__content').stop().animate({
-//                 width: '0'
-//             }, 700);
-//             $(this).closest('.menu-item').removeClass('menu-item__active');
-//
-//         }
-//
-//         // return false;
-//     });
-// });
-
 $(document).ready(function () { // DOMContentLoaded(function)
     $('.menu-item__title').click(function () {
         var menu = $(this).closest('.menu-item'); // this указывает на .menu-item__title
 
         if (!menu.hasClass('menu-item__active')) {
-            $('.menu-item').stop().animate({
-                width: '80'
-            }, 700).removeClass('menu-item__active');
+            $('.menu-item__content').stop().animate({
+                width: '0'
+            }, 700);
+            $('.menu-item').removeClass('menu-item__active');
 
             menu.addClass('menu-item__active');
             menu.find('.menu-item__content').stop().animate({
                 'width': "100%"
             }, 700);
         } else {
-            $('.menu-item').stop().animate({
-                width: '80'
+            $('.menu-item__content').stop().animate({
+                width: '0'
             }, 700);
             $(this).closest('.menu-item').removeClass('menu-item__active');
 
@@ -414,6 +375,31 @@ $(document).ready(function () { // DOMContentLoaded(function)
         // return false;
     });
 });
+
+// $(document).ready(function () { // DOMContentLoaded(function)
+//     $('.menu-item__title').click(function () {
+//         var menu = $(this).closest('.menu-item'); // this указывает на .menu-item__title
+//
+//         if (!menu.hasClass('menu-item__active')) {
+//             $('.menu-item').stop().animate({
+//                 width: '80'
+//             }, 700).removeClass('menu-item__active');
+//
+//             menu.addClass('menu-item__active');
+//             menu.find('.menu-item__content').stop().animate({
+//                 'width': "100%"
+//             }, 700);
+//         } else {
+//             $('.menu-item').stop().animate({
+//                 width: '80'
+//             }, 700);
+//             $(this).closest('.menu-item').removeClass('menu-item__active');
+//
+//         }
+//
+//         // return false;
+//     });
+// });
 
 ///// ------МОДАЛЬНОЕ ОКНО В ОТЗЫВАХ------
 
